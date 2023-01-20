@@ -1,0 +1,70 @@
+---
+title: "Depression_project_data"
+author: "Ekaterina Khimich"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
+```
+
+**Исследуемая гипотеза:**
+```{r}
+library(tidyverse)
+library(ggpubr)
+library(grid)
+library(corrplot)
+library(plotly)
+library(ggtext)
+library(lme4)
+
+data_general_country <- read_csv("Basic_data/IHME-GBD_2019_DATA-06ef178a-1.csv")
+
+data_pisa <- read_csv("Basic_data/pisa-test-score-mean-performance-on-the-reading-scale.csv")
+
+data_country_region <- read_csv("Basic_data/Metadata_Country_API_4_DS2_en_csv_v2_4700537.csv")
+
+data_slim <- read_csv("Basic_data/slim-3.csv")
+
+timss_data <- read_csv("Basic_data/2015_timss_data.csv")
+
+year_2015 <- read_csv("Basic_data/year_2015.csv")
+
+timss_data_2015 <- timss_data %>%
+  select(country, where(is.numeric)) %>%
+  group_by(country) %>%
+  summarize(across(where(is.numeric), function(x) mean(x, na.rm = TRUE)))
+
+timss_2015 <- merge(timss_data_2015, year_2015)
+
+timss_2015 <- timss_2015 %>%
+  rename('year' = '2015') %>%
+  rename('location' = 'country') %>%
+  rename('TIMSS_score' = 'percent_correct')
+
+```
+
+**Создание общего датасета**
+```{r}
+m <- data_general_country %>%
+  subset(age != '5-9 years') %>%
+  filter(measure == 'DALYs (Disability-Adjusted Life Years)') %>%
+  filter(metric == 'Percent') %>%
+  select(-c('rei','cause'))
+
+pisa_new <- data_pisa %>%
+  rename('PISA_score' = 'PISA: Mean performance on the reading scale') %>%
+  rename('location' = 'Entity') %>%
+  rename('year' = 'Year')
+
+df_base <- merge(m, pisa_new, by = c("location","year"), all = TRUE) %>%
+    select(-c('measure','metric','Code')) %>%
+    transform(year = as.character(year))
+
+df_base <- merge(df_base, timss_2015, by = c("location","year"), all = TRUE) %>%
+    transform(year = as.character(year))
+
+df_base$year <- as.numeric(df_base$year)
+
+write.csv(df_base, "data_general.csv")
+```
