@@ -1,0 +1,464 @@
+---
+title: "depr_hunger"
+author: "Алиса Селезнева"
+date: "2023-01-20"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(dplyr)
+library(ggplot2)
+library(ggpubr)
+library(tidyr)
+```
+Загрузка данных из собранных датасетов.
+```{r}
+hung <- read.csv("global-hunger-index.csv")
+summary(hung)
+```
+
+```{r}
+df_hung <- hung %>% 
+  mutate(
+    GHI_group = case_when(
+      Global_Hunger_Index_2021 < 8.80 ~ "GHI_2021: <8.80",
+      Global_Hunger_Index_2021 >= 8.80 & Global_Hunger_Index_2021 < 28.55 ~ "GHI_2021: 8.80-28.55",
+      Global_Hunger_Index_2021 >= 28.55 ~ "GHI_2021: >28.55"
+    ))
+```
+
+```{r}
+depr <- read.csv("depr_st_per.csv")
+```
+
+```{r}
+df <- inner_join(depr, df_hung, by = c("location" = "Entity", "year" = "Year"))
+df <- df %>% rename(GHI = Global_Hunger_Index_2021)
+df_perc <- df[df$metric=="Percent",]
+```
+Выявление выбросов
+```{r}
+quantile(df_perc$val)
+```
+
+```{r}
+ggplot(df_perc) +
+  aes(x = val) +
+  geom_histogram(bins = 30L, fill = "#0c4c8a") +
+  theme_minimal()
+```
+
+```{r}
+ggplot(df_perc) +
+  geom_boxplot(aes(x = year, y = val, group = year))
+```
+
+```{r}
+lower_bound <- quantile(df_perc$val, 0.05)
+upper_bound <- quantile(df_perc$val, 0.95)
+
+outlier_ind <- which(df_perc$val < lower_bound | df_perc$val > upper_bound)
+
+df_perc[outlier_ind, ]
+```
+
+```{r}
+df_1 <- df_perc[-outlier_ind, ]
+```
+
+```{r}
+ggplot(df_1) +
+  geom_boxplot(aes(x = year, y = val, group = year))
+```
+
+```{r}
+males <- df_1 %>% filter(sex == "Male")
+females <- df_1 %>% filter(sex == "Female")
+
+males_2000 <- males %>% filter(year == "2000")
+males_2006 <- males %>% filter(year == "2006")
+males_2012 <- males %>% filter(year == "2012")
+
+females_2000 <- females %>% filter(year == "2000")
+females_2006 <- females %>% filter(year == "2006")
+females_2012 <- females %>% filter(year == "2012")
+```
+
+```{r}
+males_2000 %>%
+  ggplot(aes(x = age, y = val, fill = GHI_group)) + 
+  stat_summary(geom = "bar",
+               position=position_dodge(0.95),
+               fun = "mean") +
+  stat_summary(fun.data = "mean_cl_normal",
+               geom = "errorbar",
+               position=position_dodge(0.95),
+               alpha = 0.3,
+               width = .2) +
+  labs(title = "Заболеваемость депрессией среди мужчин в 2000 году",
+       x = "Возраст", 
+       y = "Заболеваемость, %", 
+       fill = "Индекс голода GHI") +
+  theme_minimal()
+```
+
+```{r}
+males_2006 %>%
+ ggplot(aes(x = age, y = val, fill = GHI_group)) + 
+  stat_summary(geom = "bar",
+               position=position_dodge(0.95),
+               fun = "mean") +
+  stat_summary(fun.data = "mean_cl_normal",
+               geom = "errorbar",
+               position=position_dodge(0.95),
+               alpha = 0.3,
+               width = .2) +
+  labs(title = "Заболеваемость депрессией среди мужчин в 2006 году",
+       x = "Возраст", 
+       y = "Заболеваемость, %", 
+       fill = "Индекс голода GHI") +
+  theme_minimal()
+```
+
+```{r}
+males_2012 %>%
+  ggplot(aes(x = age, y = val, fill = GHI_group)) + 
+  stat_summary(geom = "bar",
+               position=position_dodge(0.95),
+               fun = "mean") +
+  stat_summary(fun.data = "mean_cl_normal",
+               geom = "errorbar",
+               position=position_dodge(0.95),
+               alpha = 0.3,
+               width = .2) +
+  labs(title = "Заболеваемость депрессией среди мужчин в 2012 году",
+       x = "Возраст", 
+       y = "Заболеваемость, %", 
+       fill = "Индекс голода GHI") +
+  theme_minimal()
+```
+
+```{r}
+females_2000 %>%
+  ggplot(aes(x = age, y = val, fill = GHI_group)) + 
+  stat_summary(geom = "bar",
+               position=position_dodge(0.95),
+               fun = "mean") +
+  stat_summary(fun.data = "mean_cl_normal",
+               geom = "errorbar",
+               position=position_dodge(0.95),
+               alpha = 0.3,
+               width = .2) +
+  labs(title = "Заболеваемость депрессией среди женщин в 2000 году",
+       x = "Возраст", 
+       y = "Заболеваемость, %", 
+       fill = "Индекс голода GHI") +
+  theme_minimal()
+```
+
+```{r}
+females_2006 %>%
+  ggplot(aes(x = age, y = val, fill = GHI_group)) + 
+  stat_summary(geom = "bar",
+               position=position_dodge(0.95),
+               fun = "mean") +
+  stat_summary(fun.data = "mean_cl_normal",
+               geom = "errorbar",
+               position=position_dodge(0.95),
+               alpha = 0.3,
+               width = .2) +
+  labs(title = "Заболеваемость депрессией среди женщин в 2006 году",
+       x = "Возраст", 
+       y = "Заболеваемость, %", 
+       fill = "Индекс голода GHI") +
+  theme_minimal()
+```
+
+```{r}
+females_2012 %>%
+  ggplot(aes(x = age, y = val, fill = GHI_group)) + 
+  stat_summary(geom = "bar",
+               position=position_dodge(0.95),
+               fun = "mean") +
+  stat_summary(fun.data = "mean_cl_normal",
+               geom = "errorbar",
+               position=position_dodge(0.95),
+               alpha = 0.3,
+               width = .2) +
+  labs(title = "Заболеваемость депрессией среди женщин в 2012 году",
+       x = "Возраст", 
+       y = "Заболеваемость, %", 
+       fill = "Индекс голода GHI") +
+  theme_minimal()
+```
+Поиск корреляций
+```{r}
+library(corrplot)
+males_int_2000 <- males_2000[c("val", "GHI")] %>%
+  select(where(is.numeric))
+m_2000_cor <- cor(males_int_2000)
+```
+
+```{r}
+corrplot(m_2000_cor, method = 'pie')
+```
+
+```{r}
+males_int_2006 <- males_2006[c("val", "GHI")] %>%
+  select(where(is.numeric))
+m_2006_cor <- cor(males_int_2006)
+corrplot(m_2006_cor, method = 'pie')
+```
+
+```{r}
+males_int_2012 <- males_2012[c("val", "GHI")] %>%
+  select(where(is.numeric))
+m_2012_cor <- cor(males_int_2012)
+corrplot(m_2012_cor, method = 'pie')
+```
+
+```{r}
+females_int_2000 <- females_2000[c("val", "GHI")] %>%
+  select(where(is.numeric))
+f_2000_cor <- cor(females_int_2000)
+corrplot(f_2000_cor, method = 'pie')
+```
+
+```{r}
+females_int_2006 <- females_2006[c("val", "GHI")] %>%
+  select(where(is.numeric))
+f_2006_cor <- cor(females_int_2006)
+corrplot(f_2006_cor, method = 'pie')
+```
+
+```{r}
+females_int_2012 <- females_2012[c("val", "GHI")] %>%
+  select(where(is.numeric))
+f_2012_cor <- cor(females_int_2012)
+corrplot(f_2012_cor, method = 'pie')
+```
+
+```{r}
+
+ggplot(df_1[df_1$age=="10-14 years",], aes(GHI, val)) +
+  geom_smooth(
+    aes(color = "y ~ log(x)", fill = "y ~ log(x)"),
+    method = 'lm', formula = y~log(x), se = FALSE, fullrange = TRUE
+  ) +
+  geom_point(
+  size = 1, alpha = 0.4, shape = 21) +
+  facet_grid(. ~ sex) +
+  theme(legend.position="none")+
+  labs(title = 'Зависимость процента заболеваемости от GHI, 10-14 лет',
+       y='Заболеваемость, %',x='Global Hunger Index') 
+
+ggplot(df_1[df_1$age =="15-19 years",], aes(GHI, val)) +
+  geom_smooth(
+    aes(color = "y ~ log(x)", fill = "y ~ log(x)"),
+    method = 'lm', formula = y~log(x), se = FALSE, fullrange = TRUE
+  ) +
+  geom_point(
+  size = 1, alpha = 0.4, shape = 21) +
+  facet_grid(. ~ sex) +
+  theme(legend.position="none")+
+  labs(title = 'Зависимость процента заболеваемости от GHI, 15-19 лет',
+       y='Заболеваемость, %',x='Global Hunger Index')
+
+ggplot(df_1[df_1$age =="20-24 years",], aes(GHI, val)) +
+  geom_smooth(
+    aes(color = "y ~ log(x)", fill = "y ~ log(x)"),
+    method = 'lm', formula = y~log(x), se = FALSE, fullrange = TRUE
+  ) +
+  geom_point(
+  size = 1, alpha = 0.4, shape = 21) +
+  facet_grid(. ~ sex) +
+  theme(legend.position="none")+
+  labs(title = 'Зависимость процента заболеваемости от GHI, 20-24 лет',
+       y='Заболеваемость, %',x='Global Hunger Index') 
+
+```
+
+
+```{r message=FALSE}
+library(lme4)
+
+ggplot(df_1) + 
+  geom_point(aes(x = val, y = 1:nrow(df_1)))
+```
+
+
+```{r}
+ggplot(df_1, aes(x = val, y = location, colour = as.factor(year))) +
+geom_point()
+
+```
+
+
+```{r}
+
+Reml_m <- lmer(val ~ GHI +  (1|year ), data = df_1)
+summary(Reml_m)
+```
+
+
+
+```{r}
+library(tibble)
+df_1$year <- as.character(df_1$year)
+
+model_coefs_ri <- coef(Reml_m)$year %>% 
+  rename(Intercept = `(Intercept)`, Slope = GHI) %>% 
+  rownames_to_column("year")
+
+df_base_na_ri <- left_join(df_1, model_coefs_ri, by = "year")
+
+ggplot(data = df_base_na_ri, 
+       mapping = aes(x = GHI, 
+                     y = val, 
+                     colour = year)) +
+  geom_point(na.rm = T, alpha = 0.5) +
+  geom_abline(aes(intercept = Intercept, 
+                  slope = Slope,
+                  colour = year),
+              size = 1.5) +
+  labs(title = 'Random Intercepts') +
+  theme_minimal()
+
+model_coef_plot_1 <- ggplot(data = df_base_na_ri, 
+       mapping = aes(x = GHI, 
+                     y = val, 
+                     colour = year)) +
+  geom_point(na.rm = T, alpha = 0.5) +
+  geom_abline(aes(intercept = Intercept, 
+                  slope = Slope)) +
+  facet_wrap(~year) +
+  labs(title = 'Random Intercepts') +
+  theme_minimal()
+```
+
+
+```{r}
+df_1$predict <- predict(Reml_m)
+
+df_1 %>%
+  pivot_longer(cols = c(val, predict), names_to = "model", values_to = "value") %>%
+  ggplot(aes(value, GHI)) +
+  geom_point() +
+  geom_line(aes(colour = model)) +
+  facet_wrap(~year) +
+  coord_flip() +
+  theme_minimal()
+```
+
+
+Random Slopes
+```{r}
+model_rs_0 <- lmer(val ~ GHI + (0 + GHI | age), data = df_1)
+
+model_coefs_rs_0 <- coef(model_rs_0)$age %>% 
+  rename(Intercept = `(Intercept)`, Slope = GHI) %>% 
+  rownames_to_column("age")
+
+model_coefs_rs_0
+```
+
+```{r}
+sleep_groups_rans_0 <- left_join(df_1, model_coefs_rs_0, by = "age")
+
+ggplot(data = sleep_groups_rans_0, 
+       mapping = aes(x = GHI, 
+                     y = val, 
+                     colour = age)) +
+  geom_point(na.rm = T, alpha = 0.5) +
+  geom_abline(aes(intercept = Intercept, 
+                  slope = Slope,
+                  colour = age),
+              size = 1.5) +
+  labs(title = 'Random Slopes') +
+  theme_minimal()
+
+ggplot(data = sleep_groups_rans_0, 
+       mapping = aes(x = GHI, 
+                     y = val, 
+                     colour = age)) +
+  geom_point(na.rm = T, alpha = 0.5) +
+  geom_abline(aes(intercept = Intercept, 
+                  slope = Slope)) +
+  facet_wrap(~age) +
+  labs(title = 'Random Slopes') +
+  theme_minimal()
+```
+
+
+Random Intercepts and Slopes
+```{r}
+model_rs_1 <- lmer(val ~ GHI + (1 + GHI | year), data = df_1)
+
+model_coefs_rs_1 <- coef(model_rs_1)$year %>% 
+  rename(Intercept = `(Intercept)`, Slope = GHI) %>% 
+  rownames_to_column("year")
+
+model_coefs_rs_1
+```
+
+```{r}
+sleep_groups_rans_1 <- left_join(df_1, model_coefs_rs_1, by = "year")
+
+ggplot(data = sleep_groups_rans_1, 
+       mapping = aes(x = GHI, 
+                     y = val, 
+                     colour = year)) +
+  geom_point(na.rm = T, alpha = 0.5) +
+  geom_abline(aes(intercept = Intercept, 
+                  slope = Slope,
+                  colour = year),
+              size = 1.5) +
+  labs(title = 'Random Intercepts and Slopes') +
+  theme_minimal()
+
+ggplot(data = sleep_groups_rans_1, 
+       mapping = aes(x = GHI, 
+                     y = val, 
+                     colour = year)) +
+  geom_point(na.rm = T, alpha = 0.5) +
+  geom_abline(aes(intercept = Intercept, 
+                  slope = Slope)) +
+  facet_wrap(~year) +
+  labs(title = 'Random Intercepts and Slopes') +
+  theme_minimal()
+```
+
+```{r}
+model_rs_2 <- lmer(val ~ GHI + (1 + GHI | age), data = df_1)
+
+model_coefs_rs_2 <- coef(model_rs_2)$age %>% 
+  rename(Intercept = `(Intercept)`, Slope = GHI) %>% 
+  rownames_to_column("age")
+
+```
+
+```{r}
+fit <- lmer(val ~ GHI + (1 | location), df_1)
+summary(fit)
+
+model_coefs_ri <- coef(fit)$location %>% 
+  rename(Intercept = `(Intercept)`, Slope = GHI) %>% 
+  rownames_to_column("location")
+
+df_1 <- left_join(df_1, model_coefs_ri, by = "location")
+
+ggplot(data = df_1, 
+       mapping = aes(x = GHI, 
+                     y = val, 
+                     colour = location, show.legend = FALSE)) +
+  geom_point(na.rm = T, alpha = 0.5, show.legend = FALSE) +
+  geom_abline(aes(intercept = Intercept, 
+                  slope = Slope,
+                  colour = location, show.legend = FALSE),
+              size = 0.2, show.legend = FALSE) +
+  labs(title = 'Random Intercepts') + 
+  theme_minimal()
+```
+```
+
