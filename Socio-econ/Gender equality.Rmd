@@ -1,0 +1,503 @@
+---
+title: "Gender equality"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+
+library(tidyverse)
+library(dplyr)
+library(ggpubr)
+library(grid)
+library(corrplot)
+library(plotly)
+library(ggtext)
+library(lme4)
+```
+
+```{r}
+df_gend <- read_csv("C:/R/Project_depression_biostat2022/Basic_data/data_general_new.csv") %>% 
+  select(c('PISA_score','TIMSS_score','location','year','sex','age','val','econ','gend_eq','health','polit','Av_working_hours','gender_gap'))
+```
+
+**24/01**
+
+```{r}
+corrplot(cor(df_gend %>% 
+    select(-c('year','PISA_score','TIMSS_score')) %>% 
+      na.omit() %>%
+      pivot_wider(names_from = c('sex'), values_from = val, values_fn = list) %>% 
+      unnest(cols = everything() ) %>% 
+      select(is.integer | is.numeric), use = "complete.obs"), method = "pie", shade.col = NA, tl.col = "black", tl.srt = 45)
+```
+
+
+
+**econ**
+
+```{r}
+gg_econ <- df_gend %>% 
+  filter(year == '2013') %>%
+  select(c('year','sex','age','val','econ')) %>% 
+  filter(val < 0.35) %>% 
+  na.omit() %>% 
+    ggplot(aes(x = econ, 
+                y = val,
+               color = sex)) + 
+  geom_point(size = 2, alpha = 0.3, color = 'black') +
+  labs(x = "econ",
+       y = "percent") +
+  geom_smooth(method = 'lm', alpha = 0.2) + 
+  theme_minimal() + 
+  theme(plot.title = element_markdown())
+```
+
+```{r}
+corrplot(cor(df_gend %>% 
+  select(c('sex','age','val','econ')) %>%
+  na.omit() %>% 
+    pivot_wider(names_from = c('sex'), values_from = val, values_fn = list) %>% 
+     unnest(cols = everything() ) %>% 
+      select(is.integer | is.numeric), use = "complete.obs"), method = "pie", shade.col = NA, tl.col = "black", tl.srt = 45)
+```
+
+
+
+
+
+
+**polit**
+
+```{r}
+gg_polit <- df_gend %>% 
+  filter(year == '2013') %>%
+  select(c('year','sex','age','val','polit')) %>% 
+  filter(val < 0.35) %>% 
+  na.omit() %>% 
+    ggplot(aes(x = polit, 
+                y = val,
+               color = sex)) + 
+  geom_point(size = 2, alpha = 0.3, color = 'black') +
+  labs(x = "polit",
+       y = "percent") +
+  geom_smooth(method = 'lm', alpha = 0.2) + 
+  theme_minimal() + 
+  theme(plot.title = element_markdown())
+```
+
+```{r}
+corrplot(cor(df_gend %>% 
+  select(c('sex','age','val','polit')) %>%
+  na.omit() %>% 
+    pivot_wider(names_from = c('sex'), values_from = val, values_fn = list) %>% 
+     unnest(cols = everything() ) %>% 
+      select(is.integer | is.numeric), use = "complete.obs"), method = "pie", shade.col = NA, tl.col = "black", tl.srt = 45)
+```
+
+
+
+
+**gender_gap**
+
+```{r}
+gg_gend <- df_gend %>% 
+  filter(year == '2013') %>%
+  select(c('year','sex','age','val','gender_gap')) %>% 
+  filter(val < 0.35) %>% 
+  na.omit() %>% 
+    ggplot(aes(x = gender_gap, 
+                y = val,
+               color = sex)) + 
+  geom_point(size = 2, alpha = 0.3, color = 'black') +
+  labs(x = "gender_gap",
+       y = "percent") +
+  geom_smooth(method = 'lm', alpha = 0.2) + 
+  theme_minimal() + 
+  theme(plot.title = element_markdown())
+```
+
+```{r}
+corrplot(cor(df_gend %>% 
+  select(c('sex','age','val','gender_gap')) %>%
+  na.omit() %>% 
+    pivot_wider(names_from = c('sex'), values_from = val, values_fn = list) %>% 
+     unnest(cols = everything() ) %>% 
+      select(is.integer | is.numeric), use = "complete.obs"), method = "pie", shade.col = NA, tl.col = "black", tl.srt = 45)
+```
+
+```{r}
+# df_for_ggplot <- df_gend %>% 
+#   filter(year == '2013') %>%
+#   select(c('year','sex','age','val','econ','polit','gender_gap')) %>% 
+#   filter(val < 0.35) %>% 
+#   na.omit()
+# 
+# ggplot(data = df_for_ggplot) +
+#   geom_point(aes(x = econ, y = val)) + 
+#   geom_point(aes(x = polit, y = val)) + 
+#   geom_point(aes(x = gender_gap, y = val)) + 
+#   geom_smooth(aes(x = econ, y = val, method = 'lm')) +
+#   # geom_smooth(aes(x = polit, y = val, color = "red", method = 'lm', alpha = 0.2)) +
+#   # geom_smooth(aes(x = gender_gap, y = val, color = "pink", method = 'lm', alpha = 0.2)) +
+#    labs(x = "polit",
+#        y = "percent") + 
+#   theme_minimal()
+```
+```{r}
+ggarrange(gg_econ, 
+          gg_polit + rremove("ylab"), 
+          gg_gend + rremove("ylab"),
+                    labels = NULL,
+                    ncol = 3, nrow = 1,
+                    common.legend = TRUE, legend = "bottom",
+                    align = "hv", 
+                    font.label = list(size = 5, color = "black", face = "bold", family = NULL, position = "top")) 
+```
+
+
+
+**25/01**
+
+
+
+```{r}
+df_general <- read_csv("C:/R/Project_depression_biostat2022/Basic_data/data_general_new.csv")
+
+df_gend <- df_general %>% 
+  select(c('location','year','sex','age','val','PISA_score','TIMSS_score','econ','health','polit','Av_working_hours','gender_gap','gend_eq'))
+```
+
+
+```{r}
+corrplot(cor(df_gend %>% 
+  select(c('sex','age','val','PISA_score')) %>%
+  na.omit() %>% 
+    pivot_wider(names_from = c('sex'), values_from = val, values_fn = list) %>% 
+     unnest(cols = everything() ) %>% 
+      select(is.integer | is.numeric), use = "complete.obs"), method = "pie", shade.col = NA, tl.col = "black", tl.srt = 45)
+```
+
+```{r}
+corrplot(cor(df_gend %>% 
+  select(c('sex','age','val','TIMSS_score')) %>%
+  na.omit() %>% 
+    pivot_wider(names_from = c('sex'), values_from = val, values_fn = list) %>% 
+     unnest(cols = everything() ) %>% 
+      select(is.integer | is.numeric), use = "complete.obs"), method = "pie", shade.col = NA, tl.col = "black", tl.srt = 45)
+```
+
+```{r}
+corrplot(cor(df_gend %>% 
+  select(c('sex','age','val','gend_eq')) %>%
+  na.omit() %>% 
+    pivot_wider(names_from = c('sex'), values_from = val, values_fn = list) %>% 
+     unnest(cols = everything() ) %>% 
+      select(is.integer | is.numeric), use = "complete.obs"), method = "pie", shade.col = NA, tl.col = "black", tl.srt = 45)
+```
+
+```{r}
+corrplot(cor(df_gend %>% 
+  select(c('sex','age','val','econ')) %>%
+  na.omit() %>% 
+    pivot_wider(names_from = c('sex'), values_from = val, values_fn = list) %>% 
+     unnest(cols = everything() ) %>% 
+      select(is.integer | is.numeric), use = "complete.obs"), method = "pie", shade.col = NA, tl.col = "black", tl.srt = 45)
+```
+
+```{r}
+corrplot(cor(df_gend %>% 
+  select(c('sex','age','val','health')) %>%
+  na.omit() %>% 
+    pivot_wider(names_from = c('sex'), values_from = val, values_fn = list) %>% 
+     unnest(cols = everything() ) %>% 
+      select(is.integer | is.numeric), use = "complete.obs"), method = "pie", shade.col = NA, tl.col = "black", tl.srt = 45)
+```
+
+```{r}
+corrplot(cor(df_gend %>% 
+  select(c('sex','age','val','polit')) %>%
+  na.omit() %>% 
+    pivot_wider(names_from = c('sex'), values_from = val, values_fn = list) %>% 
+     unnest(cols = everything() ) %>% 
+      select(is.integer | is.numeric), use = "complete.obs"), method = "pie", shade.col = NA, tl.col = "black", tl.srt = 45)
+```
+
+```{r}
+corrplot(cor(df_gend %>% 
+  select(c('sex','age','val','gender_gap')) %>%
+  na.omit() %>% 
+    pivot_wider(names_from = c('sex'), values_from = val, values_fn = list) %>% 
+     unnest(cols = everything() ) %>% 
+      select(is.integer | is.numeric), use = "complete.obs"), method = "pie", shade.col = NA, tl.col = "black", tl.srt = 45)
+```
+
+```{r}
+corrplot(cor(df_gend %>% 
+  select(c('sex','age','val','Av_working_hours')) %>%
+  na.omit() %>% 
+    pivot_wider(names_from = c('sex'), values_from = val, values_fn = list) %>% 
+     unnest(cols = everything() ) %>% 
+      select(is.integer | is.numeric), use = "complete.obs"), method = "pie", shade.col = NA, tl.col = "black", tl.srt = 45)
+```
+```{r}
+corrplot(cor(df_gend %>% 
+  select(c('sex','age','val','PISA_score','TIMSS_score')) %>%
+  na.omit() %>% 
+    pivot_wider(names_from = c('sex'), values_from = val, values_fn = list) %>% 
+     unnest(cols = everything() ) %>% 
+      select(is.integer | is.numeric), use = "complete.obs"), method = "pie", shade.col = NA, tl.col = "black", tl.srt = 45)
+```
+
+```{r}
+corrplot(cor(df_gend %>% 
+  select(c('sex','age','val','gend_eq','econ','health','polit','gender_gap','Av_working_hours')) %>%
+  na.omit() %>% 
+    pivot_wider(names_from = c('sex'), values_from = val, values_fn = list) %>% 
+     unnest(cols = everything() ) %>% 
+      select(is.integer | is.numeric), use = "complete.obs"), method = "pie", shade.col = NA, tl.col = "black", tl.srt = 45)
+```
+
+```{r}
+corrplot(cor(df_gend %>% 
+  select(c('sex','age','val','gend_eq','econ','health','polit')) %>%
+  na.omit() %>% 
+    pivot_wider(names_from = c('sex'), values_from = val, values_fn = list) %>% 
+     unnest(cols = everything() ) %>% 
+      select(is.integer | is.numeric), use = "complete.obs"), method = "pie", shade.col = NA, tl.col = "black", tl.srt = 45)
+```
+
+PCA
+
+```{r}
+library(GGally)
+
+df_pca_education <- df_gend %>% 
+  select(c('val','PISA_score','TIMSS_score'))
+
+df_pca_gender <- df_gend %>% 
+  select(c('val','econ','health','polit','Av_working_hours','gender_gap','gend_eq'))
+
+ggpairs(df_pca_education)
+
+ggpairs(df_pca_gender)
+```
+
+```{r}
+ggpairs(df_pca_education, 
+        upper = list(continuous = wrap("cor", size = 3)),
+        lower = list(continuous = wrap("points", size = 0.3)))
+
+ggpairs(df_pca_gender, 
+        upper = list(continuous = wrap("cor", size = 3)),
+        lower = list(continuous = wrap("points", size = 0.3)))
+```
+```{r}
+cor(df_pca_education %>% na.omit(), method = "spearman")
+
+cor(df_pca_gender %>% na.omit(), method = "spearman")
+```
+```{r}
+pca_education <- prcomp(df_pca_education %>% na.omit(), center = TRUE, scale = TRUE)
+pca_education
+summary(pca_education)
+
+plot(pca_education, type = "l")
+```
+
+
+```{r}
+pca_gender <- prcomp(df_pca_gender %>% na.omit(), center = TRUE, scale = TRUE)
+pca_gender
+summary(pca_gender)
+
+plot(pca_gender)
+
+pca1_gender <- pca_gender$x[,1]
+pca2_gender <- pca_gender$x[,2]
+pca3_gender <- pca_gender$x[,3]
+
+v1_gender <- pca_gender$rotation[,1]
+v2_gender <- pca_gender$rotation[,2]
+v3_gender <- pca_gender$rotation[,3]
+```
+```{r}
+library(pls)
+
+set.seed(1)
+
+model <- pcr(val ~ econ + health + polit + Av_working_hours + gender_gap + gend_eq, data = df_pca_gender, scale = TRUE , validation = "CV")
+
+summary(model)
+```
+```{r}
+validationplot(model)
+validationplot(model, val.type="MSEP")
+validationplot(model, val.type="R2")
+```
+
+**26.01**
+```{r, echo = FALSE, message = FALSE, warning = FALSE, include = FALSE}
+library(lme4)
+library(readxl)
+library(tidyverse)
+library(GGally)
+library(ggfortify)
+library(modelr)
+library(broom)
+library(dplyr)
+library(nycflights13)
+library(AER)
+library(stargazer)
+```
+
+```{r, echo = FALSE, message = FALSE, warning = FALSE, include = FALSE}
+# 1. depression ~ gender + fixed effects factor(location)
+
+# gg_lm_1a <- ggplot(data = df_gend, 
+#                 aes(x = gend_eq, 
+#                     y = val)) +
+#   geom_point() +
+#   labs(y = 'percent',
+#        title = 'depression ~ gender + fixed effects factor(location)') +
+#   theme_minimal()
+
+lm_1a <- lm(val ~ gend_eq + factor(location), data = df_gend) 
+summary(lm_1a)
+
+# df_gend %>%
+#   add_predictions(lm_1a) %>%
+#   ggplot() +
+#   geom_point(aes(gend_eq, val)) +
+#   geom_line(aes(gend_eq, pred), color = 'red')
+
+lm_1b <- lm(val ~ gender_gap + factor(location), data = df_gend) 
+summary(lm_1b)
+```
+
+```{r, echo = FALSE, message = FALSE, warning = FALSE, include = FALSE}
+# 2. depression ~ gender + factor(age_group) + fixed effects factor(location)
+
+lm_2a <- lm(val ~ gend_eq + age + factor(location), data = df_gend) 
+summary(lm_2a)
+
+lm_2b <- lm(val ~ gender_gap + age + factor(location), data = df_gend) 
+summary(lm_2b)
+```
+
+```{r, echo = FALSE, message = FALSE, warning = FALSE, include = FALSE}
+# 3-8. depression ~ gender + factor(age_group) + ("PISA_score"|"TIMSS_score")/"gend_eq"/"econ"/"health"/"polit" (вставляем по очереди, т.е. 5 регрессий в итоге) +  fixed effects factor(location)
+
+lm_3a <- lm(val ~ gend_eq + age + gend_eq + factor(location), data = df_gend) 
+summary(lm_3a)
+
+lm_4a <- lm(val ~ gend_eq + age + econ + factor(location), data = df_gend) 
+summary(lm_4a)
+
+lm_5a <- lm(val ~ gend_eq + age + health + factor(location), data = df_gend) 
+summary(lm_5a)
+
+lm_6a <- lm(val ~ gend_eq + age + polit + factor(location), data = df_gend) 
+summary(lm_6a)
+
+lm_7a <- lm(val ~ gend_eq + age + PISA_score + factor(location), data = df_gend) 
+summary(lm_7a)
+
+lm_8a <- lm(val ~ gend_eq + age + TIMSS_score + factor(location), data = df_gend) 
+summary(lm_8a)
+```
+
+```{r, echo = FALSE, message = FALSE, warning = FALSE, include = FALSE}
+lm_3b <- lm(val ~ gender_gap + age + gend_eq + factor(location), data = df_gend) 
+summary(lm_3b)
+
+lm_4b <- lm(val ~ gender_gap + age + econ + factor(location), data = df_gend) 
+summary(lm_4b)
+
+lm_5b <- lm(val ~ gender_gap + age + health + factor(location), data = df_gend) 
+summary(lm_5b)
+
+lm_6b <- lm(val ~ gender_gap + age + polit + factor(location), data = df_gend) 
+summary(lm_6b)
+
+lm_7b <- lm(val ~ gender_gap + age + PISA_score + factor(location), data = df_gend) 
+summary(lm_7b)
+
+# lm_8b <- lm(val ~ gender_gap + age + TIMSS_score + factor(location), data = df_gend) 
+# summary(lm_8b)
+```
+
+```{r, echo = FALSE, message = FALSE, warning = FALSE, include = FALSE}
+# 9.  depression ~ gender + factor(age_group) + "econ" + "health" + "polit" (вставляем по очереди, т.е. 5 регрессий в итоге) +  fixed effects factor(location)
+lm_9a <- lm(val ~ gend_eq + age + econ + health + polit + factor(location), data = df_gend) 
+summary(lm_9a)
+
+lm_9b <- lm(val ~ gender_gap + age + econ + health + polit + factor(location), data = df_gend) 
+summary(lm_9b)
+```
+
+```{r, echo = FALSE, message = FALSE, warning = FALSE, include = FALSE}
+# 10.  depression ~ gender + factor(age_group) + ("PISA_score"|"TIMSS_score") + "gend_eq" + "econ" + "health" + "polit" +  fixed effects factor(location)
+lm_10a <- lm(val ~ gend_eq + age + PISA_score + gend_eq + econ + health + polit + factor(location), data = df_gend) 
+summary(lm_10a)
+
+lm_10b <- lm(val ~ gender_gap + age + PISA_score + gend_eq + econ + health + polit + factor(location), data = df_gend) 
+summary(lm_10b)
+
+lm_11a <- lm(val ~ gend_eq + age + TIMSS_score + gend_eq + econ + health + polit + factor(location), data = df_gend) 
+summary(lm_11a)
+
+# lm_11b <- lm(val ~ gender_gap + age + TIMSS_score + gend_eq + econ + health + polit + factor(location), data = df_gend) 
+# summary(lm_11b)
+```
+
+```{r}
+models_with_gend_eq_1 <- list(lm_1a, lm_2a, lm_3a)
+models_with_gend_eq_2 <- list(lm_4a, lm_5a, lm_6a)
+models_with_gend_eq_3 <- list(lm_7a, lm_8a, lm_9a)
+models_with_gend_eq_4 <- list(lm_10a, lm_11a)
+```
+
+```{r}
+stargazer(
+  models_with_gend_eq_1,
+  type = 'text', # 'html'
+ out = 'regr_tables1.html',
+  single.row = TRUE,
+  title = 'Depression level and basic demografic indicators',
+  omit = "location",
+  omit.labels = "Country"
+)
+stargazer(
+  models_with_gend_eq_2,
+  type = 'text', # 'html'
+ out = 'regr_tables2.html',
+  title = 'Depression level and socio-economics indicators',
+  single.row = TRUE,
+  omit = "location",
+  omit.labels = "Country"
+)
+stargazer(
+  models_with_gend_eq_3,
+  type = 'text', # 'html'
+  out = 'regr_tables3.html',
+  single.row = TRUE,
+  title = 'Depression level and education indicator',
+  omit = "location",
+  omit.labels = "Country"
+)
+stargazer(
+  models_with_gend_eq_4,
+  type = 'text', # 'html'
+  out = 'regr_tables4.html',
+  single.row = TRUE,
+  title = 'Depression level and all indicators',
+  subtitle = 'Robustness check',
+  omit = "location",
+  omit.labels = "Country"
+)
+
+```
+

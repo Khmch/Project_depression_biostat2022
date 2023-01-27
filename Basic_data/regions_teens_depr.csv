@@ -1,0 +1,481 @@
+measure,location,sex,age,cause,metric,year,val,upper,lower
+Incidence,World Bank Low Income,Male,10-19 years,Depressive disorders,Number,1990,846019.8122929268,1172719.1517832566,590516.675226061
+Incidence,World Bank Low Income,Female,10-19 years,Depressive disorders,Number,1990,1304651.7901179017,1830651.7156976506,911355.1597502094
+Incidence,World Bank Lower Middle Income,Male,10-19 years,Depressive disorders,Number,1990,3326935.281964122,4505842.1727199545,2439216.632797883
+Incidence,World Bank Lower Middle Income,Female,10-19 years,Depressive disorders,Number,1990,5268217.104402145,7201281.033681346,3855883.9779009363
+Incidence,World Bank Upper Middle Income,Male,10-19 years,Depressive disorders,Number,1990,3090535.1375848665,4173187.363283839,2298496.5790535314
+Incidence,World Bank Upper Middle Income,Female,10-19 years,Depressive disorders,Number,1990,6136937.9227606375,8251380.878962894,4604864.297963622
+Incidence,World Bank High Income,Male,10-19 years,Depressive disorders,Number,1990,1785840.4515081178,2353793.5845906776,1348623.3011740977
+Incidence,World Bank High Income,Female,10-19 years,Depressive disorders,Number,1990,3116235.8059052494,4073063.50011435,2336872.0027832505
+Incidence,World Bank Low Income,Male,10-19 years,Depressive disorders,Number,1991,881764.3593486451,1223179.446950652,617679.5174247505
+Incidence,World Bank Low Income,Female,10-19 years,Depressive disorders,Number,1991,1353703.0706305571,1892345.6884993173,950250.8627966321
+Incidence,World Bank Lower Middle Income,Male,10-19 years,Depressive disorders,Number,1991,3412902.052242578,4629359.716377821,2503205.32335304
+Incidence,World Bank Lower Middle Income,Female,10-19 years,Depressive disorders,Number,1991,5482207.838817646,7495264.223820555,4049390.314177847
+Incidence,World Bank High Income,Male,10-19 years,Depressive disorders,Number,1992,1715524.1335145787,2251819.7916741213,1299220.5664780445
+Incidence,World Bank High Income,Female,10-19 years,Depressive disorders,Number,1992,3023663.8012384195,3943254.5293071982,2276105.318321082
+Incidence,World Bank Upper Middle Income,Male,10-19 years,Depressive disorders,Number,1992,3143678.5461106664,4221002.29731454,2353061.0537102376
+Incidence,World Bank Upper Middle Income,Female,10-19 years,Depressive disorders,Number,1992,5983955.463998409,7978140.559419052,4509540.178776521
+Incidence,World Bank Lower Middle Income,Male,10-19 years,Depressive disorders,Number,1992,3500041.9172118222,4777181.344184408,2568082.3515127003
+Incidence,World Bank Lower Middle Income,Female,10-19 years,Depressive disorders,Number,1992,5682880.006004893,7729260.659980911,4210769.2156491885
+Incidence,World Bank Low Income,Male,10-19 years,Depressive disorders,Number,1992,919183.4530630985,1276187.0565580574,645080.4872305819
+Incidence,World Bank Low Income,Female,10-19 years,Depressive disorders,Number,1992,1402821.3345057806,1963054.3603599677,989560.2449608854
+Incidence,World Bank High Income,Male,10-19 years,Depressive disorders,Number,1991,1743255.2441951616,2292593.0715843234,1319273.0056985663
+Incidence,World Bank High Income,Female,10-19 years,Depressive disorders,Number,1991,3056864.4336169553,3993419.3347879974,2295970.8653560677
+Incidence,World Bank Upper Middle Income,Male,10-19 years,Depressive disorders,Number,1991,3123658.3985374765,4207326.236234003,2324920.877381487
+Incidence,World Bank Upper Middle Income,Female,10-19 years,Depressive disorders,Number,1991,6061584.123962169,8118312.005965076,4558181.056250797
+Incidence,World Bank High Income,Male,10-19 years,Depressive disorders,Number,1993,1701483.455026362,2232445.4314732035,1292544.4422067632
+Incidence,World Bank High Income,Female,10-19 years,Depressive disorders,Number,1993,3012966.9024127075,3928960.6593385153,2276102.7601591228
+Incidence,World Bank Upper Middle Income,Male,10-19 years,Depressive disorders,Number,1993,3160394.2598734093,4230380.889067238,2369144.1290399483
+Incidence,World Bank Upper Middle Income,Female,10-19 years,Depressive disorders,Number,1993,5919269.039104383,7896853.165411696,4452474.399608725
+Incidence,World Bank Lower Middle Income,Male,10-19 years,Depressive disorders,Number,1993,3588788.6932264534,4888272.295424167,2643349.6630421574
+Incidence,World Bank Lower Middle Income,Female,10-19 years,Depressive disorders,Number,1993,5868953.6826186655,8012392.350266434,4365210.956790659
+Incidence,World Bank Low Income,Male,10-19 years,Depressive disorders,Number,1993,952776.8246182854,1312986.5611323,674542.991899075
+Incidence,World Bank Low Income,Female,10-19 years,Depressive disorders,Number,1993,1447746.8111884615,2029987.9441148376,1021605.1414133813
+Incidence,World Bank High Income,Male,10-19 years,Depressive disorders,Number,1994,1699678.25791569,2233775.9921959084,1293941.3292728045
+Incidence,World Bank High Income,Female,10-19 years,Depressive disorders,Number,1994,3021244.694546256,3958254.614617542,2282505.1354455766
+Incidence,World Bank Upper Middle Income,Male,10-19 years,Depressive disorders,Number,1994,3178720.5241478644,4249434.22155339,2381524.91670226
+Incidence,World Bank Upper Middle Income,Female,10-19 years,Depressive disorders,Number,1994,5876393.647872608,7830604.778060828,4436939.709646718
+Incidence,World Bank Lower Middle Income,Male,10-19 years,Depressive disorders,Number,1994,3677473.1105739153,5010450.597470934,2707660.2593872114
+Incidence,World Bank Lower Middle Income,Female,10-19 years,Depressive disorders,Number,1994,6035878.40770564,8208820.91820225,4497672.493107517
+Incidence,World Bank Upper Middle Income,Male,10-19 years,Depressive disorders,Number,1996,3231960.6481920476,4310165.436660778,2423441.670093861
+Incidence,World Bank Upper Middle Income,Female,10-19 years,Depressive disorders,Number,1996,5880351.399139459,7806154.72475883,4429966.235808381
+Incidence,World Bank Low Income,Male,10-19 years,Depressive disorders,Number,1994,985104.8042527419,1363243.6240495984,697702.194981584
+Incidence,World Bank Low Income,Female,10-19 years,Depressive disorders,Number,1994,1497066.176930902,2100191.8482337263,1062083.7663809895
+Incidence,World Bank High Income,Male,10-19 years,Depressive disorders,Number,1995,1709027.0156615565,2248715.3267076924,1303913.2019406087
+Incidence,World Bank High Income,Female,10-19 years,Depressive disorders,Number,1995,3045837.0655988893,3997206.678038812,2315429.3224366633
+Incidence,World Bank Lower Middle Income,Male,10-19 years,Depressive disorders,Number,1996,3847727.2376094875,5216846.84487722,2837898.604095556
+Incidence,World Bank Lower Middle Income,Female,10-19 years,Depressive disorders,Number,1996,6289211.098200725,8514182.328123165,4699970.950864373
+Incidence,World Bank Upper Middle Income,Male,10-19 years,Depressive disorders,Number,1995,3201327.895915015,4270424.144835754,2399691.7413193234
+Incidence,World Bank Upper Middle Income,Female,10-19 years,Depressive disorders,Number,1995,5863177.455529145,7777443.369186326,4419692.930573045
+Incidence,World Bank Lower Middle Income,Male,10-19 years,Depressive disorders,Number,1995,3763256.6062786914,5105325.188571663,2767789.0964791076
+Incidence,World Bank Lower Middle Income,Female,10-19 years,Depressive disorders,Number,1995,6176249.285229523,8385423.123881663,4605314.9955851305
+Incidence,World Bank Low Income,Male,10-19 years,Depressive disorders,Number,1996,1051363.9945846507,1449566.7221434643,748093.4095930188
+Incidence,World Bank Low Income,Female,10-19 years,Depressive disorders,Number,1996,1608922.981983933,2248565.481158153,1144134.9993976727
+Incidence,World Bank High Income,Male,10-19 years,Depressive disorders,Number,1996,1745689.2944483485,2288145.208446176,1332616.958011937
+Incidence,World Bank High Income,Female,10-19 years,Depressive disorders,Number,1996,3128753.097381788,4099198.52099682,2379090.0998656405
+Incidence,World Bank Low Income,Male,10-19 years,Depressive disorders,Number,1995,1018220.0341760366,1398827.8601422443,723822.1381264328
+Incidence,World Bank Low Income,Female,10-19 years,Depressive disorders,Number,1995,1551920.6693739987,2172021.5147472424,1102016.899424679
+Incidence,World Bank High Income,Male,10-19 years,Depressive disorders,Number,1997,1812048.9268788241,2363596.336527396,1387080.133768502
+Incidence,World Bank High Income,Female,10-19 years,Depressive disorders,Number,1997,3281556.6131403223,4271830.830237271,2505422.882508851
+Incidence,World Bank Upper Middle Income,Male,10-19 years,Depressive disorders,Number,1997,3270739.97353423,4353716.0748634385,2455153.670197329
+Incidence,World Bank Upper Middle Income,Female,10-19 years,Depressive disorders,Number,1997,5913697.0400474,7852464.969870316,4443108.478763133
+Incidence,World Bank Lower Middle Income,Male,10-19 years,Depressive disorders,Number,1997,3934439.954162715,5327345.424979119,2914516.5659762425
+Incidence,World Bank Lower Middle Income,Female,10-19 years,Depressive disorders,Number,1997,6385377.586821968,8641676.055866988,4773086.187786598
+Incidence,World Bank Low Income,Male,10-19 years,Depressive disorders,Number,1997,1082656.3136992303,1482876.3171163786,773333.157305155
+Incidence,World Bank Low Income,Female,10-19 years,Depressive disorders,Number,1997,1663775.0315316056,2315824.7240159456,1189325.748150566
+Incidence,World Bank High Income,Male,10-19 years,Depressive disorders,Number,1998,1889412.7429322568,2457652.688218385,1452299.9774273403
+Incidence,World Bank High Income,Female,10-19 years,Depressive disorders,Number,1998,3460945.4264461687,4483516.72555481,2656193.415053705
+Incidence,World Bank High Income,Male,10-19 years,Depressive disorders,Number,1999,1953489.7355905084,2536930.5662056985,1510436.4226731204
+Incidence,World Bank High Income,Female,10-19 years,Depressive disorders,Number,1999,3615486.1398847075,4647670.344595998,2786784.6104327654
+Incidence,World Bank Upper Middle Income,Male,10-19 years,Depressive disorders,Number,1998,3317577.0643118937,4404210.951851332,2494520.972514858
+Incidence,World Bank Upper Middle Income,Female,10-19 years,Depressive disorders,Number,1998,5961867.8021148415,7913593.133628926,4467291.043917645
+Incidence,World Bank Upper Middle Income,Male,10-19 years,Depressive disorders,Number,1999,3370508.673601947,4464826.157653974,2544697.677154443
+Incidence,World Bank Upper Middle Income,Female,10-19 years,Depressive disorders,Number,1999,6023716.639427957,7972958.738991864,4505813.754716926
+Incidence,World Bank Lower Middle Income,Male,10-19 years,Depressive disorders,Number,1998,4020982.908277809,5436052.892151661,2985913.0374758723
+Incidence,World Bank Lower Middle Income,Female,10-19 years,Depressive disorders,Number,1998,6471559.431324275,8752706.914826317,4841696.632370191
+Incidence,World Bank Lower Middle Income,Male,10-19 years,Depressive disorders,Number,1999,4106296.4807518814,5544383.089253698,3051760.9548709574
+Incidence,World Bank Lower Middle Income,Female,10-19 years,Depressive disorders,Number,1999,6557770.132149555,8827373.613729417,4932431.0758711165
+Incidence,World Bank Low Income,Male,10-19 years,Depressive disorders,Number,1998,1110892.1440544748,1512171.1341260318,796148.5938452141
+Incidence,World Bank Low Income,Female,10-19 years,Depressive disorders,Number,1998,1713850.1647836124,2375832.1973812925,1227620.6173077545
+Incidence,World Bank Low Income,Male,10-19 years,Depressive disorders,Number,1999,1137848.6246200784,1540874.621006217,820792.1562441789
+Incidence,World Bank Low Income,Female,10-19 years,Depressive disorders,Number,1999,1761149.853506927,2429080.1667924775,1264620.6920824163
+Incidence,World Bank Upper Middle Income,Male,10-19 years,Depressive disorders,Number,2001,3513201.6848328565,4647163.023616882,2651998.686877951
+Incidence,World Bank Upper Middle Income,Female,10-19 years,Depressive disorders,Number,2001,6223334.731297222,8220679.806934006,4651745.25891501
+Incidence,World Bank Lower Middle Income,Male,10-19 years,Depressive disorders,Number,2001,4282510.983345621,5783526.624251174,3186898.532635039
+Incidence,World Bank Lower Middle Income,Female,10-19 years,Depressive disorders,Number,2001,6784160.597970611,9135015.3320991,5117054.671808162
+Incidence,World Bank Low Income,Male,10-19 years,Depressive disorders,Number,2001,1197963.4601522617,1626708.505890477,867476.5669239993
+Incidence,World Bank Low Income,Female,10-19 years,Depressive disorders,Number,2001,1854831.8469533124,2544322.876022264,1331848.4259424468
+Incidence,World Bank High Income,Male,10-19 years,Depressive disorders,Number,2001,1985788.1663011974,2575087.58392746,1533199.8655997736
+Incidence,World Bank High Income,Female,10-19 years,Depressive disorders,Number,2001,3714789.463600948,4770445.581937324,2866713.442453228
+Incidence,World Bank High Income,Male,10-19 years,Depressive disorders,Number,2000,1982625.8466997645,2573695.4623327735,1529817.3193087871
+Incidence,World Bank High Income,Female,10-19 years,Depressive disorders,Number,2000,3693468.014391536,4744166.494958636,2853383.9977543848
+Incidence,World Bank Upper Middle Income,Male,10-19 years,Depressive disorders,Number,2000,3431591.14674008,4543569.076508839,2588358.7631961997
+Incidence,World Bank Upper Middle Income,Female,10-19 years,Depressive disorders,Number,2000,6105314.360081245,8060369.817539455,4560455.255669476
+Incidence,World Bank Lower Middle Income,Male,10-19 years,Depressive disorders,Number,2000,4189426.7329972037,5654167.018185653,3124530.234023736
+Incidence,World Bank Lower Middle Income,Female,10-19 years,Depressive disorders,Number,2000,6656257.6943240035,8965138.83408294,5027072.688452508
+Incidence,World Bank Low Income,Male,10-19 years,Depressive disorders,Number,2000,1166315.6596985306,1581804.230143432,844747.3929255146
+Incidence,World Bank Low Income,Female,10-19 years,Depressive disorders,Number,2000,1807555.1000671224,2478937.727886986,1294200.1036813413
+Incidence,World Bank High Income,Male,10-19 years,Depressive disorders,Number,2003,1983272.6080450292,2583175.4541897452,1523262.9553966192
+Incidence,World Bank High Income,Female,10-19 years,Depressive disorders,Number,2003,3750545.6253435477,4823429.505292998,2890410.8115264475
+Incidence,World Bank Upper Middle Income,Male,10-19 years,Depressive disorders,Number,2003,3695367.5370572302,4878693.586506344,2784512.223270264
+Incidence,World Bank Upper Middle Income,Female,10-19 years,Depressive disorders,Number,2003,6494000.415652681,8596839.267750574,4836867.840665992
+Incidence,World Bank Lower Middle Income,Male,10-19 years,Depressive disorders,Number,2003,4495984.241235384,6068491.476244897,3347464.318370041
+Incidence,World Bank Lower Middle Income,Female,10-19 years,Depressive disorders,Number,2003,7094561.498926958,9565707.789492264,5335190.097441138
+Incidence,World Bank Low Income,Male,10-19 years,Depressive disorders,Number,2004,1298379.6761690436,1765066.2866344335,939806.343179335
+Incidence,World Bank Low Income,Female,10-19 years,Depressive disorders,Number,2004,1999015.9755349578,2740297.4390136804,1433618.8711444803
+Incidence,World Bank Low Income,Male,10-19 years,Depressive disorders,Number,2003,1264668.5442834415,1713956.2085479186,916395.7508378335
+Incidence,World Bank Low Income,Female,10-19 years,Depressive disorders,Number,2003,1950515.5361532627,2678324.5013707234,1400310.655196536
+Incidence,World Bank High Income,Male,10-19 years,Depressive disorders,Number,2002,1985143.0189457068,2586807.768529608,1532696.2058469066
+Incidence,World Bank High Income,Female,10-19 years,Depressive disorders,Number,2002,3733169.5343447896,4796154.743947171,2876953.5879676617
+Incidence,World Bank Upper Middle Income,Male,10-19 years,Depressive disorders,Number,2002,3609133.083534354,4769162.264469872,2721348.4697685703
+Incidence,World Bank Upper Middle Income,Female,10-19 years,Depressive disorders,Number,2002,6365336.581750822,8416958.58846483,4747788.558696542
+Incidence,World Bank High Income,Male,10-19 years,Depressive disorders,Number,2004,1982953.6331876435,2589504.0300694206,1517542.6126364658
+Incidence,World Bank High Income,Female,10-19 years,Depressive disorders,Number,2004,3770259.5456032725,4853794.913974731,2898235.9286551103
+Incidence,World Bank Upper Middle Income,Male,10-19 years,Depressive disorders,Number,2004,3747642.3861159915,4959843.262076541,2822880.8454706604
+Incidence,World Bank Upper Middle Income,Female,10-19 years,Depressive disorders,Number,2004,6569948.378614879,8702968.08096642,4910493.257534476
+Incidence,World Bank Lower Middle Income,Male,10-19 years,Depressive disorders,Number,2004,4592225.34595947,6210657.343944412,3434321.665868165
+Incidence,World Bank Lower Middle Income,Female,10-19 years,Depressive disorders,Number,2004,7239162.459877228,9757068.999207754,5440796.859140941
+Incidence,World Bank Lower Middle Income,Male,10-19 years,Depressive disorders,Number,2002,4388681.474843636,5929752.990839695,3258110.300189565
+Incidence,World Bank Lower Middle Income,Female,10-19 years,Depressive disorders,Number,2002,6936562.658820644,9340649.381474718,5227625.362719815
+Incidence,World Bank Low Income,Male,10-19 years,Depressive disorders,Number,2002,1231724.0465127854,1670992.0682050667,889973.1347106384
+Incidence,World Bank Low Income,Female,10-19 years,Depressive disorders,Number,2002,1903145.0739570437,2611823.6392358206,1367045.1150738671
+Incidence,World Bank High Income,Male,10-19 years,Depressive disorders,Number,2006,1988746.490070681,2594008.4695543195,1522348.0582919617
+Incidence,World Bank High Income,Female,10-19 years,Depressive disorders,Number,2006,3811177.66787519,4900151.140145104,2946995.7615420474
+Incidence,World Bank Lower Middle Income,Male,10-19 years,Depressive disorders,Number,2006,4692217.786564043,6328966.726977975,3520764.4313263097
+Incidence,World Bank Lower Middle Income,Female,10-19 years,Depressive disorders,Number,2006,7371876.105828964,9926555.115252927,5531449.517714623
+Incidence,World Bank High Income,Male,10-19 years,Depressive disorders,Number,2005,1983569.2984687043,2584801.3895372413,1517276.7356943858
+Incidence,World Bank High Income,Female,10-19 years,Depressive disorders,Number,2005,3788635.032489425,4870603.575611817,2910863.0193547443
+Incidence,World Bank Upper Middle Income,Male,10-19 years,Depressive disorders,Number,2006,3653728.931041095,4843143.491956467,2750657.335466261
+Incidence,World Bank Upper Middle Income,Female,10-19 years,Depressive disorders,Number,2006,6410251.429812992,8493447.172080684,4803229.311334871
+Incidence,World Bank Low Income,Male,10-19 years,Depressive disorders,Number,2006,1364638.2052642961,1863868.0163697405,987408.5161089562
+Incidence,World Bank Low Income,Female,10-19 years,Depressive disorders,Number,2006,2094968.9050890692,2885012.281655809,1495550.4817802627
+Incidence,World Bank Upper Middle Income,Male,10-19 years,Depressive disorders,Number,2005,3742770.84388066,4964294.9366512485,2815397.898635246
+Incidence,World Bank Upper Middle Income,Female,10-19 years,Depressive disorders,Number,2005,6553981.5372168925,8680509.348351838,4917926.1283231145
+Incidence,World Bank Lower Middle Income,Male,10-19 years,Depressive disorders,Number,2005,4664989.073476111,6318995.374276285,3497167.484931751
+Incidence,World Bank Lower Middle Income,Female,10-19 years,Depressive disorders,Number,2005,7350903.24336981,9901864.958055777,5517514.687134393
+Incidence,World Bank Low Income,Male,10-19 years,Depressive disorders,Number,2005,1333569.1492855633,1813693.7789198346,966336.2791329016
+Incidence,World Bank Low Income,Female,10-19 years,Depressive disorders,Number,2005,2049769.277064763,2803479.421651698,1465828.6968041065
+Incidence,World Bank High Income,Male,10-19 years,Depressive disorders,Number,2007,1998443.2984449058,2607138.273523291,1530555.4061416062
+Incidence,World Bank High Income,Female,10-19 years,Depressive disorders,Number,2007,3839150.6864463626,4932648.404866843,2973201.142984153
+Incidence,World Bank Upper Middle Income,Male,10-19 years,Depressive disorders,Number,2007,3496249.532303981,4626249.977345126,2638907.279755317
+Incidence,World Bank Upper Middle Income,Female,10-19 years,Depressive disorders,Number,2007,6170677.106124409,8183225.109733925,4623435.566763357
+Incidence,World Bank Lower Middle Income,Male,10-19 years,Depressive disorders,Number,2007,4676517.589644297,6290251.268919889,3510904.5860505896
+Incidence,World Bank Lower Middle Income,Female,10-19 years,Depressive disorders,Number,2007,7295912.56998431,9812190.160006747,5472059.558137954
+Incidence,World Bank Low Income,Male,10-19 years,Depressive disorders,Number,2007,1391444.6677432398,1898996.0554136895,1008626.1473306222
+Incidence,World Bank Low Income,Female,10-19 years,Depressive disorders,Number,2007,2132247.2974082115,2948723.7063843133,1516960.378487209
+Incidence,World Bank High Income,Male,10-19 years,Depressive disorders,Number,2008,2004804.8980175548,2617074.095062992,1536985.9738552314
+Incidence,World Bank High Income,Female,10-19 years,Depressive disorders,Number,2008,3859382.802037611,4954947.313261101,2992893.20134546
+Incidence,World Bank Upper Middle Income,Male,10-19 years,Depressive disorders,Number,2008,3308550.8487183377,4367752.892311713,2503838.175859098
+Incidence,World Bank Upper Middle Income,Female,10-19 years,Depressive disorders,Number,2008,5892903.125143936,7767245.921949637,4432088.544150567
+Incidence,World Bank Lower Middle Income,Male,10-19 years,Depressive disorders,Number,2008,4643972.341684019,6206971.930339305,3491003.95396125
+Incidence,World Bank Lower Middle Income,Female,10-19 years,Depressive disorders,Number,2008,7182076.995010429,9630613.338982811,5395930.147823076
+Incidence,World Bank Lower Middle Income,Male,10-19 years,Depressive disorders,Number,2009,4619527.270008303,6136882.695530742,3478001.788682855
+Incidence,World Bank Lower Middle Income,Female,10-19 years,Depressive disorders,Number,2009,7090341.971242061,9477345.529019859,5334006.407761267
+Incidence,World Bank Low Income,Male,10-19 years,Depressive disorders,Number,2008,1416505.2671006187,1932440.1039965185,1028221.0114594467
+Incidence,World Bank Low Income,Female,10-19 years,Depressive disorders,Number,2008,2165814.7842902606,3004460.335792137,1541290.766671776
+Incidence,World Bank Low Income,Male,10-19 years,Depressive disorders,Number,2009,1442728.0475369291,1967884.5920887562,1044961.7239389124
+Incidence,World Bank Low Income,Female,10-19 years,Depressive disorders,Number,2009,2201122.8733383836,3060837.3655446935,1564479.8443527191
+Incidence,World Bank High Income,Male,10-19 years,Depressive disorders,Number,2009,2003584.4921183784,2614296.886044736,1535265.0539731234
+Incidence,World Bank High Income,Female,10-19 years,Depressive disorders,Number,2009,3865638.982854572,4959657.585288161,2999644.2050434197
+Incidence,World Bank Upper Middle Income,Male,10-19 years,Depressive disorders,Number,2009,3130872.026452954,4123728.111251258,2369069.5577812823
+Incidence,World Bank Upper Middle Income,Female,10-19 years,Depressive disorders,Number,2009,5634220.180644995,7374525.108684896,4234541.497122141
+Incidence,World Bank High Income,Male,10-19 years,Depressive disorders,Number,2010,1992307.6494657653,2594101.5311001325,1524879.4015690992
+Incidence,World Bank High Income,Female,10-19 years,Depressive disorders,Number,2010,3851512.3066499922,4942426.06864733,2991072.4569709953
+Incidence,World Bank Upper Middle Income,Male,10-19 years,Depressive disorders,Number,2010,3000533.2632816504,3953868.6400537034,2271658.3069103593
+Incidence,World Bank Upper Middle Income,Female,10-19 years,Depressive disorders,Number,2010,5442592.492178878,7136200.118281968,4089877.427162375
+Incidence,World Bank Lower Middle Income,Male,10-19 years,Depressive disorders,Number,2010,4627311.496977395,6121362.425519673,3494110.567136854
+Incidence,World Bank Lower Middle Income,Female,10-19 years,Depressive disorders,Number,2010,7081573.022755468,9442167.693626678,5321580.3149593705
+Incidence,World Bank Low Income,Male,10-19 years,Depressive disorders,Number,2010,1475056.584378328,2011824.9056061537,1062047.3357426522
+Incidence,World Bank Low Income,Female,10-19 years,Depressive disorders,Number,2010,2244489.846751887,3132478.968588316,1587046.3217502092
+Incidence,World Bank High Income,Male,10-19 years,Depressive disorders,Number,2011,1977498.3603265581,2583964.553963425,1507025.0293400607
+Incidence,World Bank High Income,Female,10-19 years,Depressive disorders,Number,2011,3823955.438634434,4903233.284016169,2964871.9374057124
+Incidence,World Bank Low Income,Male,10-19 years,Depressive disorders,Number,2011,1513617.0662241536,2068142.0274393575,1088564.9313768023
+Incidence,World Bank Low Income,Female,10-19 years,Depressive disorders,Number,2011,2296380.77328374,3214763.362346166,1624558.9564655705
+Incidence,World Bank Upper Middle Income,Male,10-19 years,Depressive disorders,Number,2011,2917596.3991214056,3858539.529851878,2207671.2596810665
+Incidence,World Bank Upper Middle Income,Female,10-19 years,Depressive disorders,Number,2011,5321589.96056663,6953945.353291202,3983183.9121498996
+Incidence,World Bank Lower Middle Income,Male,10-19 years,Depressive disorders,Number,2011,4663606.375115841,6189268.387296989,3509149.587284531
+Incidence,World Bank Lower Middle Income,Female,10-19 years,Depressive disorders,Number,2011,7136669.827967631,9555664.10713965,5357405.929528064
+Incidence,World Bank High Income,Male,10-19 years,Depressive disorders,Number,2012,1961542.2708480866,2568233.863940799,1492206.3465631949
+Incidence,World Bank High Income,Female,10-19 years,Depressive disorders,Number,2012,3793174.051281738,4868464.905871118,2929704.191822957
+Incidence,World Bank Upper Middle Income,Male,10-19 years,Depressive disorders,Number,2012,2855937.3858299227,3786301.683283499,2161656.3136446737
+Incidence,World Bank Upper Middle Income,Female,10-19 years,Depressive disorders,Number,2012,5235192.522831803,6844121.951060376,3901944.6666976195
+Incidence,World Bank Lower Middle Income,Male,10-19 years,Depressive disorders,Number,2012,4707238.6337997,6273255.128887991,3530513.3180074557
+Incidence,World Bank Lower Middle Income,Female,10-19 years,Depressive disorders,Number,2012,7194814.358989634,9644762.395390568,5366872.386782229
+Incidence,World Bank Low Income,Male,10-19 years,Depressive disorders,Number,2012,1555757.4302643642,2144377.011119356,1116875.4013041938
+Incidence,World Bank Low Income,Female,10-19 years,Depressive disorders,Number,2012,2354146.540924086,3295843.968877291,1651260.3981150475
+Incidence,World Bank Lower Middle Income,Male,10-19 years,Depressive disorders,Number,2014,4809257.893985161,6479013.109224619,3586253.3828391954
+Incidence,World Bank Lower Middle Income,Female,10-19 years,Depressive disorders,Number,2014,7329047.529121006,9890727.585309464,5420637.490154972
+Incidence,World Bank Low Income,Male,10-19 years,Depressive disorders,Number,2014,1645613.3031613694,2275310.165398613,1172747.6039349772
+Incidence,World Bank Low Income,Female,10-19 years,Depressive disorders,Number,2014,2481086.248668091,3453853.587169277,1740129.2731284602
+Incidence,World Bank High Income,Male,10-19 years,Depressive disorders,Number,2013,1947510.7942380735,2546146.3174975426,1475547.4636674118
+Incidence,World Bank High Income,Female,10-19 years,Depressive disorders,Number,2013,3765782.020815743,4838567.498757226,2901296.038354124
+Incidence,World Bank Upper Middle Income,Male,10-19 years,Depressive disorders,Number,2013,2807559.6309726057,3733050.6152561805,2123615.8208568865
+Incidence,World Bank Upper Middle Income,Female,10-19 years,Depressive disorders,Number,2013,5167580.926418877,6776685.123229961,3844240.8674871144
+Incidence,World Bank Lower Middle Income,Male,10-19 years,Depressive disorders,Number,2013,4756666.97328427,6373662.36023754,3560144.4114196408
+Incidence,World Bank Lower Middle Income,Female,10-19 years,Depressive disorders,Number,2013,7258062.71699751,9765437.596213121,5393756.502384509
+Incidence,World Bank High Income,Male,10-19 years,Depressive disorders,Number,2014,1937631.7314083318,2527365.074335429,1469505.1733840492
+Incidence,World Bank High Income,Female,10-19 years,Depressive disorders,Number,2014,3747107.1770444885,4817226.4101610705,2874787.8733773143
+Incidence,World Bank Upper Middle Income,Male,10-19 years,Depressive disorders,Number,2014,2764978.189617034,3684784.527628851,2079153.135226228
+Incidence,World Bank Upper Middle Income,Female,10-19 years,Depressive disorders,Number,2014,5103974.350349808,6715171.745293445,3794846.8594724815
+Incidence,World Bank Low Income,Male,10-19 years,Depressive disorders,Number,2013,1600400.0422236288,2210379.868574991,1144993.4205731282
+Incidence,World Bank Low Income,Female,10-19 years,Depressive disorders,Number,2013,2416533.355778881,3375949.17872937,1696010.4587551649
+Incidence,World Bank Upper Middle Income,Male,10-19 years,Depressive disorders,Number,2015,2725132.031928127,3625147.998477507,2041632.761279007
+Incidence,World Bank Upper Middle Income,Female,10-19 years,Depressive disorders,Number,2015,5035535.311625889,6635952.4501121985,3744754.095442981
+Incidence,World Bank High Income,Male,10-19 years,Depressive disorders,Number,2015,1932159.6376518693,2522984.0876589264,1470502.5419255937
+Incidence,World Bank High Income,Female,10-19 years,Depressive disorders,Number,2015,3739152.6368207354,4793563.047049574,2860290.6220991644
+Incidence,World Bank Lower Middle Income,Male,10-19 years,Depressive disorders,Number,2015,4862001.877060282,6582429.108200542,3612504.4414854576
+Incidence,World Bank Lower Middle Income,Female,10-19 years,Depressive disorders,Number,2015,7411086.124707452,10018401.269321354,5454990.11624422
+Incidence,World Bank High Income,Male,10-19 years,Depressive disorders,Number,2016,1923777.7811811846,2512698.460741586,1459049.2995867813
+Incidence,World Bank High Income,Female,10-19 years,Depressive disorders,Number,2016,3739799.9694534647,4808117.799575102,2863105.6823529513
+Incidence,World Bank Upper Middle Income,Male,10-19 years,Depressive disorders,Number,2016,2680028.29917243,3571338.7710965374,2007731.6860329576
+Incidence,World Bank Upper Middle Income,Female,10-19 years,Depressive disorders,Number,2016,4927196.134851934,6517603.338444413,3645252.0905952905
+Incidence,World Bank Low Income,Male,10-19 years,Depressive disorders,Number,2015,1691361.426034299,2356607.818699379,1200605.5116769162
+Incidence,World Bank Low Income,Female,10-19 years,Depressive disorders,Number,2015,2547147.689366526,3532307.699149506,1786698.2538157569
+Incidence,World Bank Lower Middle Income,Male,10-19 years,Depressive disorders,Number,2016,4907500.440234935,6618252.114110054,3643668.1138699814
+Incidence,World Bank Lower Middle Income,Female,10-19 years,Depressive disorders,Number,2016,7499100.534664274,10137935.543925779,5523150.394911677
+Incidence,World Bank Low Income,Male,10-19 years,Depressive disorders,Number,2016,1739929.6605255785,2412431.8320225775,1237173.4648720582
+Incidence,World Bank Low Income,Female,10-19 years,Depressive disorders,Number,2016,2614923.9985701884,3647105.226991082,1836149.7889601637
+Incidence,World Bank High Income,Male,10-19 years,Depressive disorders,Number,2017,1916998.7122123984,2507654.8320474084,1454497.409700526
+Incidence,World Bank High Income,Female,10-19 years,Depressive disorders,Number,2017,3744011.4900801065,4827853.404286388,2875054.561587983
+Incidence,World Bank Upper Middle Income,Male,10-19 years,Depressive disorders,Number,2017,2646021.989139687,3523617.91185952,1979441.1193279312
+Incidence,World Bank Upper Middle Income,Female,10-19 years,Depressive disorders,Number,2017,4832736.358623112,6425427.497721212,3560864.353409701
+Incidence,World Bank Lower Middle Income,Male,10-19 years,Depressive disorders,Number,2017,4950935.598357233,6648785.67020862,3669763.4420605563
+Incidence,World Bank Lower Middle Income,Female,10-19 years,Depressive disorders,Number,2017,7583322.372283036,10295314.079765355,5593145.503228357
+Incidence,World Bank Low Income,Male,10-19 years,Depressive disorders,Number,2017,1792723.2910447754,2480717.2566463435,1270241.1240424658
+Incidence,World Bank Low Income,Female,10-19 years,Depressive disorders,Number,2017,2687143.906788169,3757705.4965283563,1878822.8194407644
+Incidence,World Bank High Income,Male,10-19 years,Depressive disorders,Number,2018,1924163.470981799,2508813.8477269947,1462883.7639500194
+Incidence,World Bank High Income,Female,10-19 years,Depressive disorders,Number,2018,3754873.9349597446,4839350.636183446,2863241.925539464
+Incidence,World Bank Upper Middle Income,Male,10-19 years,Depressive disorders,Number,2018,2637979.942567384,3554461.9774512574,1961810.936199101
+Incidence,World Bank Upper Middle Income,Female,10-19 years,Depressive disorders,Number,2018,4792688.038235859,6380225.196742215,3520927.920003693
+Incidence,World Bank Upper Middle Income,Male,10-19 years,Depressive disorders,Number,2019,2647429.2581276093,3573977.8576505324,1943945.389931796
+Incidence,World Bank Upper Middle Income,Female,10-19 years,Depressive disorders,Number,2019,4775730.28269983,6408844.100591951,3488268.779629698
+Incidence,World Bank Lower Middle Income,Male,10-19 years,Depressive disorders,Number,2018,5001672.798558617,6753302.6090023955,3682961.195658001
+Incidence,World Bank Lower Middle Income,Female,10-19 years,Depressive disorders,Number,2018,7657170.20349432,10403282.199871272,5615526.187389456
+Incidence,World Bank Lower Middle Income,Male,10-19 years,Depressive disorders,Number,2019,5057707.209071063,6873604.837393704,3693038.960482227
+Incidence,World Bank Lower Middle Income,Female,10-19 years,Depressive disorders,Number,2019,7720375.643054255,10536675.589246307,5602362.47489467
+Incidence,World Bank Low Income,Male,10-19 years,Depressive disorders,Number,2018,1852768.2224621482,2546129.9077710914,1315133.5525067248
+Incidence,World Bank Low Income,Female,10-19 years,Depressive disorders,Number,2018,2768639.2661586436,3887790.979733866,1930883.9619086427
+Incidence,World Bank Low Income,Male,10-19 years,Depressive disorders,Number,2019,1920587.3755373666,2651344.4218015424,1358838.406724048
+Incidence,World Bank Low Income,Female,10-19 years,Depressive disorders,Number,2019,2858741.1790356883,4025115.253230455,1982477.5947384143
+Incidence,World Bank High Income,Male,10-19 years,Depressive disorders,Number,2019,1941719.3562392874,2554241.5372409895,1463836.301227287
+Incidence,World Bank High Income,Female,10-19 years,Depressive disorders,Number,2019,3771914.7731517735,4867037.827630293,2852435.118541088
+Prevalence,World Bank High Income,Male,10-19 years,Depressive disorders,Number,1990,1331877.6316978026,1697994.8423716421,1019050.7221261342
+Prevalence,World Bank High Income,Female,10-19 years,Depressive disorders,Number,1990,2274538.5805831575,2906009.932452341,1743360.5278748604
+Prevalence,World Bank Upper Middle Income,Male,10-19 years,Depressive disorders,Number,1990,2316898.9522241764,3005179.122593816,1772442.0326088378
+Prevalence,World Bank Upper Middle Income,Female,10-19 years,Depressive disorders,Number,1990,4298396.790807325,5565801.80110969,3288310.9032752346
+Prevalence,World Bank Lower Middle Income,Male,10-19 years,Depressive disorders,Number,1990,2530889.8301671483,3272147.7207917906,1920727.34230505
+Prevalence,World Bank Lower Middle Income,Female,10-19 years,Depressive disorders,Number,1990,3875059.20361903,5037143.052141485,2945384.8055201974
+Prevalence,World Bank Low Income,Male,10-19 years,Depressive disorders,Number,1990,621883.2985646161,819179.1788558711,460468.83692146244
+Prevalence,World Bank Low Income,Female,10-19 years,Depressive disorders,Number,1990,963750.6155920279,1293395.3900547116,699931.8958039455
+Prevalence,World Bank Low Income,Male,10-19 years,Depressive disorders,Number,1992,673336.2956767442,886155.0213311764,501425.9300112111
+Prevalence,World Bank Low Income,Female,10-19 years,Depressive disorders,Number,1992,1034361.1914795799,1386577.279851506,757549.3082407446
+Prevalence,World Bank High Income,Male,10-19 years,Depressive disorders,Number,1992,1280029.9463952854,1625103.2298692346,983500.4925174327
+Prevalence,World Bank High Income,Female,10-19 years,Depressive disorders,Number,1992,2200723.884968597,2805009.7017888157,1683590.138309547
+Prevalence,World Bank Low Income,Male,10-19 years,Depressive disorders,Number,1991,647002.1869088504,855340.627590278,479793.974860782
+Prevalence,World Bank Low Income,Female,10-19 years,Depressive disorders,Number,1991,999021.9389983823,1340542.4966063432,728789.6958355691
+Prevalence,World Bank High Income,Male,10-19 years,Depressive disorders,Number,1991,1301784.1532201213,1649380.3904427814,999106.713855988
+Prevalence,World Bank High Income,Female,10-19 years,Depressive disorders,Number,1991,2229372.9446297465,2855474.643813329,1704924.2138154581
+Prevalence,World Bank Upper Middle Income,Male,10-19 years,Depressive disorders,Number,1992,2332211.413485591,2972245.0396952997,1786521.6329628124
+Prevalence,World Bank Upper Middle Income,Female,10-19 years,Depressive disorders,Number,1992,4198621.236429203,5410160.593935007,3214827.2263677022
+Prevalence,World Bank Upper Middle Income,Male,10-19 years,Depressive disorders,Number,1991,2327757.7728403457,3002620.324041425,1789278.5668836206
+Prevalence,World Bank Upper Middle Income,Female,10-19 years,Depressive disorders,Number,1991,4248794.611873314,5471935.699029667,3253809.196176356
+Prevalence,World Bank Lower Middle Income,Male,10-19 years,Depressive disorders,Number,1992,2647725.5710944915,3421155.98478915,2023541.3435127502
+Prevalence,World Bank Lower Middle Income,Female,10-19 years,Depressive disorders,Number,1992,4128025.687124356,5358278.144114047,3156582.932496152
+Prevalence,World Bank Lower Middle Income,Male,10-19 years,Depressive disorders,Number,1991,2588874.4833460874,3350075.136080076,1984728.000024498
+Prevalence,World Bank Lower Middle Income,Female,10-19 years,Depressive disorders,Number,1991,4003895.8397734305,5198502.163486037,3060118.889286676
+Prevalence,World Bank Upper Middle Income,Male,10-19 years,Depressive disorders,Number,1993,2337403.5330004073,2980505.440313852,1789283.1166074614
+Prevalence,World Bank Upper Middle Income,Female,10-19 years,Depressive disorders,Number,1993,4157867.528153316,5356281.614363718,3195342.673810686
+Prevalence,World Bank Upper Middle Income,Male,10-19 years,Depressive disorders,Number,1994,2345029.2068425375,2994555.815397237,1797569.0836581471
+Prevalence,World Bank Upper Middle Income,Female,10-19 years,Depressive disorders,Number,1994,4132275.682768133,5322685.371480013,3174771.4052745653
+Prevalence,World Bank Low Income,Male,10-19 years,Depressive disorders,Number,1995,744725.5991049662,978471.2416667853,546780.7964287135
+Prevalence,World Bank Low Income,Female,10-19 years,Depressive disorders,Number,1995,1141533.4063066407,1506510.9550695573,839301.2470632851
+Prevalence,World Bank Low Income,Male,10-19 years,Depressive disorders,Number,1994,720380.2465272264,945531.8526552639,530887.6048979106
+Prevalence,World Bank Low Income,Female,10-19 years,Depressive disorders,Number,1994,1102028.5855587893,1458863.393047999,810225.8402374494
+Prevalence,World Bank High Income,Male,10-19 years,Depressive disorders,Number,1993,1267784.9341077313,1610811.9038034491,974492.9078499025
+Prevalence,World Bank High Income,Female,10-19 years,Depressive disorders,Number,1993,2186713.5262524183,2794020.964556227,1679793.024053742
+Prevalence,World Bank Low Income,Male,10-19 years,Depressive disorders,Number,1993,697333.8596426565,914493.1496398357,515454.789246283
+Prevalence,World Bank Low Income,Female,10-19 years,Depressive disorders,Number,1993,1066710.0628515496,1420880.0510733547,785311.6120607266
+Prevalence,World Bank Lower Middle Income,Male,10-19 years,Depressive disorders,Number,1993,2711641.177604321,3493134.5970539814,2072221.617038447
+Prevalence,World Bank Lower Middle Income,Female,10-19 years,Depressive disorders,Number,1993,4246475.128615219,5514577.678539503,3252366.985661415
+Prevalence,World Bank Lower Middle Income,Male,10-19 years,Depressive disorders,Number,1994,2777186.0527178394,3579994.9975435655,2144866.744474559
+Prevalence,World Bank Lower Middle Income,Female,10-19 years,Depressive disorders,Number,1994,4357783.461675068,5643918.098346777,3354789.7630864526
+Prevalence,World Bank High Income,Male,10-19 years,Depressive disorders,Number,1995,1266660.4637234905,1608335.4345876921,977348.3775118267
+Prevalence,World Bank High Income,Female,10-19 years,Depressive disorders,Number,1995,2193855.4422443993,2801576.7715072613,1692249.7059972875
+Prevalence,World Bank Upper Middle Income,Male,10-19 years,Depressive disorders,Number,1995,2358847.3844171083,3007558.5123532945,1816047.2098060236
+Prevalence,World Bank Upper Middle Income,Female,10-19 years,Depressive disorders,Number,1995,4127674.0838665096,5323897.660532847,3155765.838251516
+Prevalence,World Bank Lower Middle Income,Male,10-19 years,Depressive disorders,Number,1995,2841475.8185213315,3635295.777612695,2190413.425820538
+Prevalence,World Bank Lower Middle Income,Female,10-19 years,Depressive disorders,Number,1995,4457880.513306631,5757225.593242991,3462267.627820441
+Prevalence,World Bank High Income,Male,10-19 years,Depressive disorders,Number,1994,1263223.1603931414,1606719.7799588994,973017.5819257726
+Prevalence,World Bank High Income,Female,10-19 years,Depressive disorders,Number,1994,2184389.574634076,2797255.9569639387,1683759.9638078774
+Prevalence,World Bank Low Income,Male,10-19 years,Depressive disorders,Number,1996,769064.4874021737,1013241.7795738578,570699.1246245981
+Prevalence,World Bank Low Income,Female,10-19 years,Depressive disorders,Number,1996,1182617.727307253,1564938.0605126638,869190.398406275
+Prevalence,World Bank High Income,Male,10-19 years,Depressive disorders,Number,1996,1286519.5309926544,1624437.1254183974,992721.0016076309
+Prevalence,World Bank High Income,Female,10-19 years,Depressive disorders,Number,1996,2239992.5563037014,2870246.69141289,1726431.9469342271
+Prevalence,World Bank Upper Middle Income,Male,10-19 years,Depressive disorders,Number,1996,2382580.693940445,3052301.3691033116,1828304.2607564616
+Prevalence,World Bank Upper Middle Income,Female,10-19 years,Depressive disorders,Number,1996,4146727.4316301434,5345853.661917334,3171252.694722574
+Prevalence,World Bank Lower Middle Income,Male,10-19 years,Depressive disorders,Number,1996,2908940.0584201096,3721313.819392948,2234554.1563524255
+Prevalence,World Bank Lower Middle Income,Female,10-19 years,Depressive disorders,Number,1996,4546608.589114987,5877392.116582296,3532057.481470689
+Prevalence,World Bank High Income,Male,10-19 years,Depressive disorders,Number,1997,1323653.237562869,1673204.262051635,1026820.9071653844
+Prevalence,World Bank High Income,Female,10-19 years,Depressive disorders,Number,1997,2329182.5492493333,2964867.1462710174,1801639.555265281
+Prevalence,World Bank Lower Middle Income,Male,10-19 years,Depressive disorders,Number,1997,2978875.410785923,3822672.917423593,2293597.492840355
+Prevalence,World Bank Lower Middle Income,Female,10-19 years,Depressive disorders,Number,1997,4629091.269118673,5979811.756155327,3578712.6201454434
+Prevalence,World Bank Low Income,Male,10-19 years,Depressive disorders,Number,1997,792711.9121513105,1037632.5856712498,588412.274668575
+Prevalence,World Bank Low Income,Female,10-19 years,Depressive disorders,Number,1997,1222870.526536396,1612551.9308800984,902876.6790365907
+Prevalence,World Bank Upper Middle Income,Male,10-19 years,Depressive disorders,Number,1997,2414631.1790221822,3092111.5195602598,1855035.1232316066
+Prevalence,World Bank Upper Middle Income,Female,10-19 years,Depressive disorders,Number,1997,4180046.4126691883,5368763.371339865,3195235.5529066506
+Prevalence,World Bank Low Income,Male,10-19 years,Depressive disorders,Number,1998,813984.7616164447,1056748.5369876148,603863.6357086372
+Prevalence,World Bank Low Income,Female,10-19 years,Depressive disorders,Number,1998,1259450.5479969042,1662411.156591003,928898.1124720216
+Prevalence,World Bank High Income,Male,10-19 years,Depressive disorders,Number,1998,1367308.3535089847,1721938.1804834034,1061896.706566308
+Prevalence,World Bank High Income,Female,10-19 years,Depressive disorders,Number,1998,2434655.040866837,3084592.312178423,1890864.3014742592
+Prevalence,World Bank Upper Middle Income,Male,10-19 years,Depressive disorders,Number,1998,2454959.5025766324,3152299.432525758,1890777.8272023096
+Prevalence,World Bank Upper Middle Income,Female,10-19 years,Depressive disorders,Number,1998,4223914.943639297,5424905.35823726,3221287.3903708006
+Prevalence,World Bank Lower Middle Income,Male,10-19 years,Depressive disorders,Number,1998,3048017.52596961,3881112.5607171245,2355559.78742028
+Prevalence,World Bank Lower Middle Income,Female,10-19 years,Depressive disorders,Number,1998,4706162.160449725,6042546.702816647,3652820.8928549713
+Prevalence,World Bank Low Income,Male,10-19 years,Depressive disorders,Number,2000,855293.3552113943,1107884.560506639,636891.2325920165
+Prevalence,World Bank Low Income,Female,10-19 years,Depressive disorders,Number,2000,1328942.712367548,1741486.245717531,981196.942979813
+Prevalence,World Bank Low Income,Male,10-19 years,Depressive disorders,Number,1999,834342.5504111263,1076697.848371438,616597.393961721
+Prevalence,World Bank Low Income,Female,10-19 years,Depressive disorders,Number,1999,1294346.3851666579,1700891.523044097,957373.045350787
+Prevalence,World Bank High Income,Male,10-19 years,Depressive disorders,Number,1999,1402641.316038493,1759561.9075938866,1094516.2440054843
+Prevalence,World Bank High Income,Female,10-19 years,Depressive disorders,Number,1999,2525201.409670166,3188218.1139386976,1959308.7219230023
+Prevalence,World Bank Upper Middle Income,Male,10-19 years,Depressive disorders,Number,1999,2500057.057343583,3213797.380324263,1919692.7998223554
+Prevalence,World Bank Upper Middle Income,Female,10-19 years,Depressive disorders,Number,1999,4280363.183966124,5449716.552315505,3273724.237223733
+Prevalence,World Bank Upper Middle Income,Male,10-19 years,Depressive disorders,Number,2000,2550072.1861191075,3269397.6670534057,1970314.5014845175
+Prevalence,World Bank Upper Middle Income,Female,10-19 years,Depressive disorders,Number,2000,4348942.002901299,5596522.387811091,3325784.9382355823
+Prevalence,World Bank Lower Middle Income,Male,10-19 years,Depressive disorders,Number,1999,3118221.1977401734,3974681.5825447994,2421835.351418209
+Prevalence,World Bank Lower Middle Income,Female,10-19 years,Depressive disorders,Number,1999,4782676.6298727915,6137490.769818286,3706201.3731408166
+Prevalence,World Bank Lower Middle Income,Male,10-19 years,Depressive disorders,Number,2000,3184595.5344027127,4030734.589501715,2476480.057422345
+Prevalence,World Bank Lower Middle Income,Female,10-19 years,Depressive disorders,Number,2000,4860127.606300177,6193654.6137027815,3774740.8276446844
+Prevalence,World Bank High Income,Male,10-19 years,Depressive disorders,Number,2000,1417695.5410906537,1774124.5740663179,1107436.049847276
+Prevalence,World Bank High Income,Female,10-19 years,Depressive disorders,Number,2000,2569673.257165613,3243058.17222197,2002585.0637335256
+Prevalence,World Bank Low Income,Male,10-19 years,Depressive disorders,Number,2001,878890.3810102568,1140839.3338291843,659956.8775083364
+Prevalence,World Bank Low Income,Female,10-19 years,Depressive disorders,Number,2001,1363691.9334658813,1798936.4341883424,1013303.5980035003
+Prevalence,World Bank Lower Middle Income,Male,10-19 years,Depressive disorders,Number,2002,3331017.1437584753,4243192.114731183,2585635.766450416
+Prevalence,World Bank Lower Middle Income,Female,10-19 years,Depressive disorders,Number,2002,5059621.363490433,6481653.357092987,3917454.9772237972
+Prevalence,World Bank Upper Middle Income,Male,10-19 years,Depressive disorders,Number,2002,2687749.5456532636,3440313.1994914366,2063461.1834344396
+Prevalence,World Bank Upper Middle Income,Female,10-19 years,Depressive disorders,Number,2002,4554696.391241319,5829128.653938527,3478874.723509909
+Prevalence,World Bank High Income,Male,10-19 years,Depressive disorders,Number,2002,1418381.0849965091,1780856.2061600252,1099897.3114476574
+Prevalence,World Bank High Income,Female,10-19 years,Depressive disorders,Number,2002,2590293.8425873225,3244399.733495307,2021429.6810460938
+Prevalence,World Bank Upper Middle Income,Male,10-19 years,Depressive disorders,Number,2001,2613569.5347296684,3359446.644647882,2021216.3841960994
+Prevalence,World Bank Upper Middle Income,Female,10-19 years,Depressive disorders,Number,2001,4443097.951552841,5667737.422851181,3394558.4727611123
+Prevalence,World Bank High Income,Male,10-19 years,Depressive disorders,Number,2001,1418738.1373744397,1774848.7942016672,1108047.3393920832
+Prevalence,World Bank High Income,Female,10-19 years,Depressive disorders,Number,2001,2580460.009589391,3251179.66017666,2014010.716998405
+Prevalence,World Bank Lower Middle Income,Male,10-19 years,Depressive disorders,Number,2001,3254401.0223658686,4145703.791656512,2522139.8919374063
+Prevalence,World Bank Lower Middle Income,Female,10-19 years,Depressive disorders,Number,2001,4953248.386789759,6353653.742438715,3842518.0242810966
+Prevalence,World Bank Low Income,Male,10-19 years,Depressive disorders,Number,2002,903649.941023584,1169934.8544742689,673452.8659696813
+Prevalence,World Bank Low Income,Female,10-19 years,Depressive disorders,Number,2002,1399753.0762058152,1831657.5915280315,1037581.5829803119
+Prevalence,World Bank High Income,Male,10-19 years,Depressive disorders,Number,2004,1418364.3114714085,1792689.2988307658,1097180.4222208979
+Prevalence,World Bank High Income,Female,10-19 years,Depressive disorders,Number,2004,2612334.39560037,3271134.434244213,2040127.4785240346
+Prevalence,World Bank High Income,Male,10-19 years,Depressive disorders,Number,2003,1417980.2546811663,1780306.4203344712,1101720.9221682865
+Prevalence,World Bank High Income,Female,10-19 years,Depressive disorders,Number,2003,2599760.7373474943,3256536.098791961,2021114.7417142754
+Prevalence,World Bank Upper Middle Income,Male,10-19 years,Depressive disorders,Number,2003,2755269.885464159,3545443.439525635,2121527.6509653614
+Prevalence,World Bank Upper Middle Income,Female,10-19 years,Depressive disorders,Number,2003,4660145.25485419,5981467.37111648,3556338.5210841973
+Prevalence,World Bank Upper Middle Income,Male,10-19 years,Depressive disorders,Number,2004,2797998.238570222,3587851.2612865334,2158225.327245845
+Prevalence,World Bank Upper Middle Income,Female,10-19 years,Depressive disorders,Number,2004,4727591.421558264,6075538.636560489,3612184.3766297335
+Prevalence,World Bank Lower Middle Income,Male,10-19 years,Depressive disorders,Number,2003,3408305.839669911,4365935.641311944,2646000.1473170095
+Prevalence,World Bank Lower Middle Income,Female,10-19 years,Depressive disorders,Number,2003,5169811.279186575,6626524.803657036,4001757.9017422325
+Prevalence,World Bank Lower Middle Income,Male,10-19 years,Depressive disorders,Number,2004,3477121.0176980007,4449156.995057787,2689561.8609767538
+Prevalence,World Bank Lower Middle Income,Female,10-19 years,Depressive disorders,Number,2004,5268563.19534039,6760174.153010219,4077699.170416424
+Prevalence,World Bank Low Income,Male,10-19 years,Depressive disorders,Number,2003,927580.1816375859,1208720.7948183327,692401.7450882549
+Prevalence,World Bank Low Income,Female,10-19 years,Depressive disorders,Number,2003,1435954.0482045477,1875549.9435814295,1064425.7374498148
+Prevalence,World Bank Low Income,Male,10-19 years,Depressive disorders,Number,2005,978997.1443296294,1285059.9770870465,732075.8908628533
+Prevalence,World Bank Low Income,Female,10-19 years,Depressive disorders,Number,2005,1511729.680806362,1967154.3157751223,1113094.216908374
+Prevalence,World Bank Low Income,Male,10-19 years,Depressive disorders,Number,2006,1002881.9048456824,1317320.168582742,750410.7965242428
+Prevalence,World Bank Low Income,Female,10-19 years,Depressive disorders,Number,2006,1546653.7094330133,2010429.7247369613,1150568.0246910932
+Prevalence,World Bank Low Income,Male,10-19 years,Depressive disorders,Number,2004,952680.8456937921,1251455.9831750689,711261.7739208532
+Prevalence,World Bank Low Income,Female,10-19 years,Depressive disorders,Number,2004,1472781.4361128216,1911352.920489573,1086818.7211895285
+Prevalence,World Bank High Income,Male,10-19 years,Depressive disorders,Number,2005,1420143.7842308846,1785550.725638971,1096757.4872060674
+Prevalence,World Bank High Income,Female,10-19 years,Depressive disorders,Number,2005,2625655.3487833454,3299521.3138550823,2048469.5824701083
+Prevalence,World Bank Upper Middle Income,Male,10-19 years,Depressive disorders,Number,2005,2801036.182908845,3593218.10325359,2149002.9073325666
+Prevalence,World Bank Upper Middle Income,Female,10-19 years,Depressive disorders,Number,2005,4729999.206859631,6101185.109135983,3612702.362719745
+Prevalence,World Bank Lower Middle Income,Male,10-19 years,Depressive disorders,Number,2005,3531807.387564406,4520843.573006772,2733219.3667611657
+Prevalence,World Bank Lower Middle Income,Female,10-19 years,Depressive disorders,Number,2005,5351481.562409781,6857072.85877025,4119768.9056604956
+Prevalence,World Bank Upper Middle Income,Male,10-19 years,Depressive disorders,Number,2006,2741422.620263709,3506905.959683819,2113189.003584205
+Prevalence,World Bank Upper Middle Income,Female,10-19 years,Depressive disorders,Number,2006,4644504.8364809295,5968845.08265606,3549652.775013492
+Prevalence,World Bank Low Income,Male,10-19 years,Depressive disorders,Number,2007,1024654.5438138138,1340789.4459314025,763010.5442225653
+Prevalence,World Bank Low Income,Female,10-19 years,Depressive disorders,Number,2007,1577215.7719824146,2078629.9932255733,1167227.230318404
+Prevalence,World Bank Lower Middle Income,Male,10-19 years,Depressive disorders,Number,2006,3564372.295589282,4562732.28108319,2768047.620515232
+Prevalence,World Bank Lower Middle Income,Female,10-19 years,Depressive disorders,Number,2006,5394684.5118498495,6890488.4506564,4185228.0507136723
+Prevalence,World Bank High Income,Male,10-19 years,Depressive disorders,Number,2006,1424266.0210716478,1797614.7524102074,1101735.2806198827
+Prevalence,World Bank High Income,Female,10-19 years,Depressive disorders,Number,2006,2641480.9958325834,3311386.715724115,2067458.894008184
+Prevalence,World Bank High Income,Male,10-19 years,Depressive disorders,Number,2007,1431667.25376794,1805450.4493808548,1108973.027987608
+Prevalence,World Bank High Income,Female,10-19 years,Depressive disorders,Number,2007,2658565.1698095007,3329744.801869653,2083990.8830085013
+Prevalence,World Bank Upper Middle Income,Male,10-19 years,Depressive disorders,Number,2010,2277620.3953524255,2898275.6442963486,1767195.4039186093
+Prevalence,World Bank Upper Middle Income,Female,10-19 years,Depressive disorders,Number,2010,3995727.9495442947,5097583.820175383,3090729.646085404
+Prevalence,World Bank Lower Middle Income,Male,10-19 years,Depressive disorders,Number,2007,3577428.463656398,4568179.222343412,2768470.8367192093
+Prevalence,World Bank Lower Middle Income,Female,10-19 years,Depressive disorders,Number,2007,5400659.951348328,6916193.095921012,4160422.2169462214
+Prevalence,World Bank Upper Middle Income,Male,10-19 years,Depressive disorders,Number,2009,2373625.1816584347,3030770.483218475,1829773.173825501
+Prevalence,World Bank Upper Middle Income,Female,10-19 years,Depressive disorders,Number,2009,4135517.798903919,5281720.223641778,3196806.0478082476
+Prevalence,World Bank Upper Middle Income,Male,10-19 years,Depressive disorders,Number,2008,2500710.548613726,3189802.853881004,1941416.0875948456
+Prevalence,World Bank Upper Middle Income,Female,10-19 years,Depressive disorders,Number,2008,4310715.553761693,5477746.520212554,3324372.5497555602
+Prevalence,World Bank Lower Middle Income,Male,10-19 years,Depressive disorders,Number,2009,3589058.799218722,4543869.42543673,2770398.6649936885
+Prevalence,World Bank Lower Middle Income,Female,10-19 years,Depressive disorders,Number,2009,5390868.635956746,6855590.038879412,4168966.5413983623
+Prevalence,World Bank High Income,Male,10-19 years,Depressive disorders,Number,2009,1434025.7788350168,1810518.5970934746,1108318.2575987196
+Prevalence,World Bank High Income,Female,10-19 years,Depressive disorders,Number,2009,2667674.313940241,3343836.739070907,2085983.0989275975
+Prevalence,World Bank Upper Middle Income,Male,10-19 years,Depressive disorders,Number,2007,2631968.823327937,3360033.3474212973,2031670.505352698
+Prevalence,World Bank Upper Middle Income,Female,10-19 years,Depressive disorders,Number,2007,4493662.987159606,5772404.730926115,3459147.04645373
+Prevalence,World Bank Lower Middle Income,Male,10-19 years,Depressive disorders,Number,2010,3608005.1273816996,4582588.388440175,2775492.8350321343
+Prevalence,World Bank Lower Middle Income,Female,10-19 years,Depressive disorders,Number,2010,5418385.301987222,6889390.15813441,4178986.64698978
+Prevalence,World Bank High Income,Male,10-19 years,Depressive disorders,Number,2008,1435686.0961388026,1813379.2139617875,1116121.3416424722
+Prevalence,World Bank High Income,Female,10-19 years,Depressive disorders,Number,2008,2668475.7450290974,3350186.8530563684,2083713.1441740938
+Prevalence,World Bank High Income,Male,10-19 years,Depressive disorders,Number,2010,1425243.8499194789,1802748.41314606,1108580.0275161534
+Prevalence,World Bank High Income,Female,10-19 years,Depressive disorders,Number,2010,2654272.6983002434,3328286.7347965706,2080882.6659313496
+Prevalence,World Bank Low Income,Male,10-19 years,Depressive disorders,Number,2008,1044876.2136974271,1368408.328302886,775132.7428425658
+Prevalence,World Bank Low Income,Female,10-19 years,Depressive disorders,Number,2008,1605663.0177947865,2115776.341802395,1184308.0241693663
+Prevalence,World Bank Lower Middle Income,Male,10-19 years,Depressive disorders,Number,2008,3581036.034821352,4575764.61034352,2766142.079579008
+Prevalence,World Bank Lower Middle Income,Female,10-19 years,Depressive disorders,Number,2008,5390959.3571648365,6878637.562866367,4198126.674500077
+Prevalence,World Bank Low Income,Male,10-19 years,Depressive disorders,Number,2009,1066104.329291197,1393835.4039756402,791741.108046704
+Prevalence,World Bank Low Income,Female,10-19 years,Depressive disorders,Number,2009,1635123.106044645,2163623.9351513158,1203614.0818679088
+Prevalence,World Bank High Income,Male,10-19 years,Depressive disorders,Number,2011,1414610.424011393,1790962.0450611715,1091546.044631718
+Prevalence,World Bank High Income,Female,10-19 years,Depressive disorders,Number,2011,2635480.7856159573,3307437.9081739914,2073137.2403554535
+Prevalence,World Bank Upper Middle Income,Male,10-19 years,Depressive disorders,Number,2011,2213121.3054536562,2815966.906262463,1719613.0497370951
+Prevalence,World Bank Upper Middle Income,Female,10-19 years,Depressive disorders,Number,2011,3899231.2836749647,4972111.718162145,3020293.941856795
+Prevalence,World Bank Lower Middle Income,Male,10-19 years,Depressive disorders,Number,2011,3639153.6442861827,4646496.330030549,2797310.176729261
+Prevalence,World Bank Lower Middle Income,Female,10-19 years,Depressive disorders,Number,2011,5468001.601995848,6974300.003846801,4234797.798014369
+Prevalence,World Bank Low Income,Male,10-19 years,Depressive disorders,Number,2010,1091541.3395669742,1434524.4613629968,811528.7185907747
+Prevalence,World Bank Low Income,Female,10-19 years,Depressive disorders,Number,2010,1669922.9529473763,2219016.679016264,1227294.168149938
+Prevalence,World Bank Low Income,Male,10-19 years,Depressive disorders,Number,2011,1121105.193362422,1475550.7307431765,838849.3609815064
+Prevalence,World Bank Low Income,Female,10-19 years,Depressive disorders,Number,2011,1710763.2486738046,2276307.170451061,1266914.860958991
+Prevalence,World Bank Low Income,Male,10-19 years,Depressive disorders,Number,2013,1186121.5579531216,1562925.1323859598,882168.4662894259
+Prevalence,World Bank Low Income,Female,10-19 years,Depressive disorders,Number,2013,1801903.8267913747,2389806.7197905304,1328619.723317541
+Prevalence,World Bank Low Income,Male,10-19 years,Depressive disorders,Number,2012,1153200.8740843262,1522268.6836231165,851765.6981658313
+Prevalence,World Bank Low Income,Female,10-19 years,Depressive disorders,Number,2012,1755550.3669192877,2333670.1016096817,1290834.1587416036
+Prevalence,World Bank Low Income,Male,10-19 years,Depressive disorders,Number,2014,1219475.8045181334,1608551.0782113313,896091.1148441541
+Prevalence,World Bank Low Income,Female,10-19 years,Depressive disorders,Number,2014,1851416.8635657507,2448514.711399822,1359772.6828812424
+Prevalence,World Bank Lower Middle Income,Male,10-19 years,Depressive disorders,Number,2012,3676757.075998164,4711701.831298616,2822165.420382987
+Prevalence,World Bank Lower Middle Income,Female,10-19 years,Depressive disorders,Number,2012,5519415.8629661715,7047029.289890873,4271616.189569216
+Prevalence,World Bank High Income,Male,10-19 years,Depressive disorders,Number,2012,1404593.9594340357,1785236.941127043,1085344.4328239185
+Prevalence,World Bank High Income,Female,10-19 years,Depressive disorders,Number,2012,2617431.902761691,3286662.312784995,2049530.1046378156
+Prevalence,World Bank Upper Middle Income,Male,10-19 years,Depressive disorders,Number,2012,2164049.120512178,2763778.7570321593,1670058.3847528447
+Prevalence,World Bank Upper Middle Income,Female,10-19 years,Depressive disorders,Number,2012,3825769.545716841,4902208.8051923085,2957816.7504058434
+Prevalence,World Bank High Income,Male,10-19 years,Depressive disorders,Number,2014,1390507.6104516105,1765277.1988158387,1074062.8718143948
+Prevalence,World Bank High Income,Female,10-19 years,Depressive disorders,Number,2014,2592634.3570237933,3267098.157366786,2015577.4324370015
+Prevalence,World Bank High Income,Male,10-19 years,Depressive disorders,Number,2013,1396224.3192170246,1770457.848794123,1077108.5269374033
+Prevalence,World Bank High Income,Female,10-19 years,Depressive disorders,Number,2013,2602093.5435752636,3279043.695906039,2031033.694906771
+Prevalence,World Bank Upper Middle Income,Male,10-19 years,Depressive disorders,Number,2014,2089786.996138305,2700282.812493589,1607152.9644787882
+Prevalence,World Bank Upper Middle Income,Female,10-19 years,Depressive disorders,Number,2014,3713268.784673353,4776106.63412769,2845597.9613597365
+Prevalence,World Bank Upper Middle Income,Male,10-19 years,Depressive disorders,Number,2015,2058697.1963077325,2635835.6074547796,1579608.0123820498
+Prevalence,World Bank Upper Middle Income,Female,10-19 years,Depressive disorders,Number,2015,3658504.1817773464,4723635.960907555,2809483.2026468017
+Prevalence,World Bank High Income,Male,10-19 years,Depressive disorders,Number,2015,1387243.872903048,1762385.3500674104,1070391.82244747
+Prevalence,World Bank High Income,Female,10-19 years,Depressive disorders,Number,2015,2588856.994049723,3271994.9388632947,2015971.3738519885
+Prevalence,World Bank Upper Middle Income,Male,10-19 years,Depressive disorders,Number,2013,2124681.9481552797,2726038.1464228504,1644427.8333112474
+Prevalence,World Bank Upper Middle Income,Female,10-19 years,Depressive disorders,Number,2013,3766194.6863182476,4826163.342523988,2904670.61738245
+Prevalence,World Bank Lower Middle Income,Male,10-19 years,Depressive disorders,Number,2013,3715737.080021465,4746894.017737664,2839520.592076962
+Prevalence,World Bank Lower Middle Income,Female,10-19 years,Depressive disorders,Number,2013,5574017.671829122,7162766.366301953,4284807.69265352
+Prevalence,World Bank Lower Middle Income,Male,10-19 years,Depressive disorders,Number,2015,3798498.072396238,4889122.4868102735,2910113.2640246446
+Prevalence,World Bank Lower Middle Income,Female,10-19 years,Depressive disorders,Number,2015,5697500.814123221,7356390.032100559,4315849.516658792
+Prevalence,World Bank High Income,Male,10-19 years,Depressive disorders,Number,2016,1380787.9158032779,1755870.8329826945,1064011.2284516592
+Prevalence,World Bank High Income,Female,10-19 years,Depressive disorders,Number,2016,2588561.2309075366,3255218.258590783,2010205.5786218033
+Prevalence,World Bank Upper Middle Income,Male,10-19 years,Depressive disorders,Number,2016,2025594.5028457604,2600138.367573971,1552762.2437212968
+Prevalence,World Bank Upper Middle Income,Female,10-19 years,Depressive disorders,Number,2016,3582634.109243699,4620300.03008976,2743073.940371644
+Prevalence,World Bank Lower Middle Income,Male,10-19 years,Depressive disorders,Number,2016,3836444.1200793637,4900477.722728422,2929877.4274699353
+Prevalence,World Bank Lower Middle Income,Female,10-19 years,Depressive disorders,Number,2016,5765383.464859596,7431282.205539166,4378927.366157734
+Prevalence,World Bank Lower Middle Income,Male,10-19 years,Depressive disorders,Number,2014,3756143.966737267,4847475.878999312,2883026.2793290475
+Prevalence,World Bank Lower Middle Income,Female,10-19 years,Depressive disorders,Number,2014,5633055.184603398,7299363.0436282195,4285745.477287501
+Prevalence,World Bank Low Income,Male,10-19 years,Depressive disorders,Number,2015,1253418.1063339205,1675038.9069767643,927793.3005557657
+Prevalence,World Bank Low Income,Female,10-19 years,Depressive disorders,Number,2015,1900921.7918639316,2524765.0730622634,1403690.1978079302
+Prevalence,World Bank Low Income,Male,10-19 years,Depressive disorders,Number,2016,1289961.0630912608,1710837.0594441753,953618.2297481189
+Prevalence,World Bank Low Income,Female,10-19 years,Depressive disorders,Number,2016,1951577.7992774704,2594051.3561126487,1428633.3358831455
+Prevalence,World Bank High Income,Male,10-19 years,Depressive disorders,Number,2017,1375448.3270302562,1748792.8667373445,1058649.9746352471
+Prevalence,World Bank High Income,Female,10-19 years,Depressive disorders,Number,2017,2589572.3888474056,3285948.236826463,2017008.4527363891
+Prevalence,World Bank Lower Middle Income,Male,10-19 years,Depressive disorders,Number,2018,3912005.502887048,5070689.277341401,2978463.26862953
+Prevalence,World Bank Lower Middle Income,Female,10-19 years,Depressive disorders,Number,2018,5876948.592940989,7583191.092282375,4463806.773319351
+Prevalence,World Bank Upper Middle Income,Male,10-19 years,Depressive disorders,Number,2017,2001321.1259457918,2557525.1224504886,1531833.705176166
+Prevalence,World Bank Upper Middle Income,Female,10-19 years,Depressive disorders,Number,2017,3516168.2425546777,4525445.558280143,2661804.767440899
+Prevalence,World Bank Lower Middle Income,Male,10-19 years,Depressive disorders,Number,2017,3872110.393226039,4957423.488770062,2956496.3693620944
+Prevalence,World Bank Lower Middle Income,Female,10-19 years,Depressive disorders,Number,2017,5828915.135112757,7514616.8471908625,4425078.015141445
+Prevalence,World Bank High Income,Male,10-19 years,Depressive disorders,Number,2018,1379903.459833231,1762563.8010454872,1058824.3620433754
+Prevalence,World Bank High Income,Female,10-19 years,Depressive disorders,Number,2018,2596307.322454737,3283664.9785911753,2014922.358860394
+Prevalence,World Bank Upper Middle Income,Male,10-19 years,Depressive disorders,Number,2018,1993997.0767066465,2579932.2768202666,1510925.7928919634
+Prevalence,World Bank Upper Middle Income,Female,10-19 years,Depressive disorders,Number,2018,3486675.9287875206,4512050.646696094,2636758.4014104605
+Prevalence,World Bank Low Income,Male,10-19 years,Depressive disorders,Number,2017,1327834.7582404553,1758694.197147684,986095.7169556636
+Prevalence,World Bank Low Income,Female,10-19 years,Depressive disorders,Number,2017,2005080.8856043501,2682324.2920630076,1467344.3927636093
+Prevalence,World Bank Low Income,Male,10-19 years,Depressive disorders,Number,2018,1371848.265173205,1837494.0769433347,1013036.5977608894
+Prevalence,World Bank Low Income,Female,10-19 years,Depressive disorders,Number,2018,2065707.9446402946,2754957.6306386064,1502418.354576084
+Prevalence,World Bank Low Income,Male,10-19 years,Depressive disorders,Number,2019,1421704.2792491508,1882473.3707225376,1040130.9232346773
+Prevalence,World Bank Low Income,Female,10-19 years,Depressive disorders,Number,2019,2132721.3723479128,2870568.137635403,1547978.8905148096
+Prevalence,World Bank High Income,Male,10-19 years,Depressive disorders,Number,2019,1392441.3349723928,1777121.1055764637,1071797.8221876037
+Prevalence,World Bank High Income,Female,10-19 years,Depressive disorders,Number,2019,2607094.215005913,3312445.8733152035,2007740.6331864016
+Prevalence,World Bank Upper Middle Income,Male,10-19 years,Depressive disorders,Number,2019,1999367.3815527055,2606646.5496175475,1498644.613145842
+Prevalence,World Bank Upper Middle Income,Female,10-19 years,Depressive disorders,Number,2019,3470982.8640553043,4541616.00798504,2606140.014166636
+Prevalence,World Bank Lower Middle Income,Male,10-19 years,Depressive disorders,Number,2019,3958168.517692558,5074606.3054208895,3009601.3012387715
+Prevalence,World Bank Lower Middle Income,Female,10-19 years,Depressive disorders,Number,2019,5905590.656880616,7613083.84322364,4445679.910599587

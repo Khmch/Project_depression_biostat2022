@@ -1,0 +1,168 @@
+---
+title: "Depression_project_data"
+author: "Ekaterina Khimich"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
+```
+
+**Исследуемая гипотеза:**
+```{r, include=FALSE}
+library(tidyverse)
+library(ggpubr)
+library(grid)
+library(corrplot)
+library(plotly)
+library(ggtext)
+library(lme4)
+library(readxl)
+library(summarytools)
+```
+
+
+```{r}
+data_general_country <- read_csv("Basic_data/IHME-GBD_2019_DATA-36b5ace3-1.csv")
+```
+
+Образование
+```{r}
+data_pisa <- read_csv("Basic_data/pisa-test-score-mean-performance-on-the-reading-scale.csv")
+
+data_country_region <- read_csv("Basic_data/Metadata_Country_API_4_DS2_en_csv_v2_4700537.csv")
+
+data_slim <- read_csv("Basic_data/slim-3.csv")
+
+timss_data <- read_csv("Basic_data/2015_timss_data.csv")
+
+year_2015 <- read_csv("Basic_data/year_2015.csv")
+
+timss_data_2015 <- timss_data %>%
+  select(country, where(is.numeric)) %>%
+  group_by(country) %>%
+  summarize(across(where(is.numeric), function(x) mean(x, na.rm = TRUE)))
+
+timss_2015 <- merge(timss_data_2015, year_2015)
+
+timss_2015 <- timss_2015 %>%
+  rename('year' = '2015') %>%
+  rename('location' = 'country') %>%
+  rename('TIMSS_score' = 'percent_correct')
+
+```
+
+```{r}
+m <- data_general_country %>%
+  subset(age != '5-9 years') %>%
+  filter(measure == 'DALYs (Disability-Adjusted Life Years)') %>%
+  filter(metric == 'Percent') %>%
+  select(-c('rei','cause'))
+
+pisa_new <- data_pisa %>%
+  rename('PISA_score' = 'PISA: Mean performance on the reading scale') %>%
+  rename('location' = 'Entity') %>%
+  rename('year' = 'Year')
+
+df_base <- merge(m, pisa_new, by = c("location","year"), all = TRUE) %>%
+    select(-c('measure','metric','Code')) %>%
+    transform(year = as.character(year))
+
+df_base <- merge(df_base, timss_2015, by = c("location","year"), all = TRUE)
+```
+
+Гендерное равенство
+```{r}
+gen_eq <- read_csv("Basic_data/Гендерное равенство.csv") %>% 
+  rename('location' = 'country') %>% 
+  rename('gend_eq' = 'gendEqal2021') %>% 
+  select(-c('education'))
+
+df_base <- merge(df_base, gen_eq, by = c("location"), all = TRUE)
+```
+
+```{r}
+gender_gap <- read_excel("Basic_data/global-gender-gap-index-2013.xls") %>% 
+  select(c('Country','2013 Score','2012 Score','2011 Score', '2010 Score','2009 Score','2008 Score','2007 Score','2006 Score')) %>% 
+  rename('location' = 'Country')
+  
+gender_gap$'2013 Score' <- as.character(gender_gap$'2013 Score')
+
+gender_gap <- pivot_longer(gender_gap, cols = '2013 Score':'2006 Score', names_to = "Year")
+
+visit <- str_split_fixed(gender_gap$Year, ' ', 2)
+
+gender_gap <- bind_cols(gender_gap, visit) %>% 
+  rename(year = ...4) %>% 
+  select(-c('Year','...5')) %>% 
+  rename('gender_gap' = 'value')
+
+gender_gap$gender_gap <- as.numeric(gender_gap$gender_gap)
+
+df_base <- merge(df_base, gender_gap, by = c("location","year"), all = TRUE)
+```
+
+
+```{r}
+working_hours <- read_csv("Basic_data/average-working-hours-of-children.csv")
+
+working_hours <- working_hours %>% 
+  rename('location' = 'Entity') %>% 
+  rename('year' = 'Year') %>% 
+  select(-c('Code'))
+
+df_base <- merge(df_base, working_hours, by = c("location","year"), all = TRUE)
+```
+
+Экономические показатели
+```{r}
+# library(readxl)
+# WEOOct2022all <- read_excel("Basic_data/WEOOct2022all.xls")
+# View(WEOOct2022all)
+```
+
+
+
+```{r}
+write.csv(df_base, "data_general_new.csv")
+```
+
+```{r}
+dfSummary(df_base)
+```
+
+**Графики*
+
+```{r}
+df_base %>% 
+    ggplot(aes(x = val, fill = sex)) + 
+  geom_histogram(alpha = 0.5, na.rm = TRUE) +
+   labs(x = "percent") + 
+  theme_minimal() +
+  theme(legend.position = "bottom")
+
+df_base %>% 
+    ggplot(aes(x = val, fill = sex)) + 
+  geom_density(alpha = 0.5, na.rm = TRUE) +
+   labs(x = "percent") + 
+  theme_minimal() +
+  theme(legend.position = "bottom")
+```
+```{r}
+df_base %>% 
+    ggplot(aes(x = val, fill = age)) + 
+  geom_histogram(alpha = 0.5, na.rm = TRUE) +
+   labs(x = "percent") + 
+  theme_minimal() +
+  theme(legend.position = "bottom")
+
+df_base %>% 
+    ggplot(aes(x = val, fill = age)) + 
+  geom_density(alpha = 0.5, na.rm = TRUE) +
+   labs(x = "percent") + 
+  theme_minimal() +
+  theme(legend.position = "bottom")
+```
+
+
+
